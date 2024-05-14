@@ -1,0 +1,5 @@
+.section {
+  display: grid;
+  gap: 24px;
+  padding: 120px 24px;
+}

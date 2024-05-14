@@ -1,2 +1,23 @@
 :root {
+  /* PRIMARY COLORS */
+  --peach: "rgb(231, 129, 107)";
+  --black: "rgb(29, 28, 30)";
+  --white: "rgb(255, 255, 255)";
+
+  /* SECONDARY COLORS */
+  --light-peach: "rgb(255, 173, 155)";
+  --dark-grey: "rgb(51, 49, 54)";
+  --light-grey: "rgb(241, 243, 245)";
+}
+
+/* FONTS */
+@font-face {
+  font-family: "Jost";
+  src: url("src/assets/fonts/Jost-Regular.woff2") format("woff2");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Jost";
+  src: url("src/assets/fonts/Jost-Medium.woff2") format("woff2");
+  font-weight: 500;
 }

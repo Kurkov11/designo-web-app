@@ -7,11 +7,13 @@ export default function Header() {
         src="src/assets/shared/desktop/logo-dark.png"
         alt=""
       />
-      <img
-        className={classes.hamburger}
-        src="src/assets/shared/mobile/icon-hamburger.svg"
-        alt=""
-      />
+      <button>
+        <img
+          className={classes.hamburger}
+          src="src/assets/shared/mobile/icon-hamburger.svg"
+          alt=""
+        />
+      </button>
     </header>
   );
 }

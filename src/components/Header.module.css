@@ -1,0 +1,17 @@
+.header {
+  height: 96px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 24px;
+  background-color: var(--white);
+}
+.logo {
+  width: 202px;
+  height: 27px;
+}
+
+.hamburger {
+  width: 24px;
+  height: 20px;
+}

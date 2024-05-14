@@ -1,3 +1,39 @@
+.intro-text {
+  padding-block: 80px;
+  padding-inline: 24px;
+  flex: 1;
+}
+.intro {
+  background-image: url("src/assets/home/desktop/bg-pattern-hero-home.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left;
+  background-color: var(--peach);
+  height: 843px;
+  overflow: hidden;
+  position: relative;
+}
+.intro h1 {
+  text-align: center;
+  color: white;
+  font-size: 32px;
+  line-height: 36px;
+  margin-bottom: 14px;
+}
+.intro p {
+  text-align: center;
+  color: white;
+  font-size: 15px;
+  line-height: 25px;
+  margin-bottom: 24px;
+}
+.intro button {
+  margin-inline: auto;
+  display: block;
+}
 .phone {
-  background-image: url("src/assets/home/desktop/image-hero-phone.png");
+  object-fit: cover; /* prevent stretch */
+  height: 913px;
+  margin-block: -170px;
+  max-width: 100%;
 }

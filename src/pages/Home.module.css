@@ -5,9 +5,8 @@
 }
 .intro {
   background-image: url("src/assets/home/desktop/bg-pattern-hero-home.svg");
-  background-size: cover;
   background-repeat: no-repeat;
-  background-position: left;
+  background-position: 0 102px; /* 102px from the top */
   background-color: var(--peach);
   height: 843px;
   overflow: hidden;

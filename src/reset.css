@@ -131,3 +131,7 @@ button {
   background-color: transparent;
   border: 0;
 }
+a {
+  color: white;
+  text-decoration: none;
+}

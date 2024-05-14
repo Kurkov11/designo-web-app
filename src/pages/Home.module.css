@@ -1,16 +1,14 @@
 .intro-text {
   padding-block: 80px;
   padding-inline: 24px;
-  flex: 1;
 }
 .intro {
   background-image: url("src/assets/home/desktop/bg-pattern-hero-home.svg");
   background-repeat: no-repeat;
-  background-position: 0 102px; /* 102px from the top */
+  background-position: 0 102px;
   background-color: var(--peach);
-  height: 843px;
+  height: 843px; /* Fixed height to determine where phone is cropped */
   overflow: hidden;
-  position: relative;
 }
 .intro h1 {
   text-align: center;
@@ -33,6 +31,6 @@
 .phone {
   object-fit: cover; /* prevent stretch */
   height: 913px;
-  margin-block: -170px;
+  margin-block: -170px; /* allow content to go onto the phone image */
   max-width: 100%;
 }

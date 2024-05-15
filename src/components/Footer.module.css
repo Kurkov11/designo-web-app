@@ -78,3 +78,9 @@
   gap: 16px;
   margin-bottom: 64px;
 }
+
+.link {
+  display: block;
+  width: fit-content;
+  margin-inline: auto;
+}

@@ -26,13 +26,15 @@
   margin-bottom: 24px;
   font-weight: 300;
 }
-.intro button {
-  margin-inline: auto;
-  display: block;
-}
 .phone {
   object-fit: cover; /* prevent stretch */
   height: 913px;
   margin-block: -170px; /* allow content to go onto the phone image */
   max-width: 100%;
+}
+.link {
+  display: block;
+  width: fit-content;
+  margin-inline: auto;
+  position: relative;
 }

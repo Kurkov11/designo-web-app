@@ -8,5 +8,6 @@
   letter-spacing: 1px;
   padding: 17px 24.5px;
   border-radius: 8px;
+  width: fit-content;
   display: block;
 }

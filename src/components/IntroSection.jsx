@@ -1,5 +1,6 @@
 import Button from "../components/UI/Button";
 import classes from "./IntroSection.module.css";
+import { Link } from "react-router-dom";
 
 export default function IntroSection() {
   return (
@@ -11,7 +12,9 @@ export default function IntroSection() {
           fully responsive websites, app design, and engaging brand experiences.
           Find out more about our services.
         </p>
-        <Button>Learn More</Button>
+        <Link to="/about" className={classes.link}>
+          <Button>Learn More</Button>
+        </Link>
       </div>
       <img
         src="src/assets/home/desktop/image-hero-phone.png"

@@ -12,7 +12,9 @@ export default function Footer() {
           Ready to take it to the next level? Contact us today and find out how
           our expertise can help your business grow.
         </p>
-        <Button style={{ marginInline: "auto" }}>Get in touch</Button>
+        <Link to="/contact" className={classes.link}>
+          <Button>Get in touch</Button>
+        </Link>
       </div>
       <div className={classes.main}>
         <img

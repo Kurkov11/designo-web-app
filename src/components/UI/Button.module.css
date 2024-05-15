@@ -1,6 +1,7 @@
 .button {
   background-color: var(--white);
   color: var(--black);
+  font-family: "Jost";
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 1px;

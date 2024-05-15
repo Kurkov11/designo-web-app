@@ -18,8 +18,8 @@
 }
 @font-face {
   font-family: "Jost";
-  src: url("src/assets/fonts/Jost-Medium.woff2") format("woff2");
-  font-weight: 500;
+  src: url("src/assets/fonts/Jost-Light.woff2") format("woff2");
+  font-weight: 300;
 }
 * {
   font-family: "Jost";

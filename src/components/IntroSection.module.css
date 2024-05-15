@@ -16,6 +16,7 @@
   font-size: 32px;
   line-height: 36px;
   margin-bottom: 14px;
+  font-weight: 400;
 }
 .intro p {
   text-align: center;
@@ -23,6 +24,7 @@
   font-size: 15px;
   line-height: 25px;
   margin-bottom: 24px;
+  font-weight: 300;
 }
 .intro button {
   margin-inline: auto;

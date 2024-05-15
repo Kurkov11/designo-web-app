@@ -1,0 +1,11 @@
+.address {
+  text-align: center;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 300;
+  color: rgb(143, 143, 143);
+  font-weight: 300;
+}
+.address strong {
+  font-weight: 500;
+}

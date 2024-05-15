@@ -7,6 +7,7 @@
   background-position: 44% 52%;
   background-repeat: no-repeat;
   border-radius: 15px;
+  position: relative;
 }
 .card h2 {
   font-size: 32px;
@@ -29,8 +30,42 @@
   /* Make space for call to action */
   padding-top: 253px;
   margin-top: -189px;
+  padding-inline: 24px;
   z-index: -10;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   background-color: var(--black);
+}
+.logo {
+  width: 202px;
+}
+.line {
+  margin-block: 32px;
+  height: 1px;
+  background-color: rgba(151, 151, 151, 0.3);
+  width: 100%;
+  border: none;
+}
+.nav {
+  margin-bottom: 40px;
+}
+.nav ul {
+  display: grid;
+  gap: 32px;
+  text-align: center;
+  letter-spacing: 2px;
+  line-height: 14px;
+}
+.nav a {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: var(--white);
+  font-weight: 400;
+}
+.address-container {
+  display: grid;
+  gap: 40px;
 }

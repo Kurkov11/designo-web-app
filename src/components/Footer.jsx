@@ -1,5 +1,7 @@
+import { Link } from "react-router-dom";
 import classes from "./Footer.module.css";
 import Button from "./UI/Button";
+import Address from "./Address";
 
 export default function Footer() {
   return (
@@ -12,7 +14,37 @@ export default function Footer() {
         </p>
         <Button style={{ marginInline: "auto" }}>Get in touch</Button>
       </div>
-      <div className={classes.main}></div>
+      <div className={classes.main}>
+        <img
+          src="/src/assets/shared/desktop/logo-light.png"
+          alt=""
+          className={classes.logo}
+        />
+        <hr className={classes.line} />
+        <nav className={classes.nav}>
+          <ul>
+            <li>
+              <Link to="/about">Our Company</Link>
+            </li>
+            <li>
+              <Link to="/locations">Locations</Link>
+            </li>
+            <li>
+              <Link to="/contact">Contact</Link>
+            </li>
+          </ul>
+        </nav>
+        <div className={classes["address-container"]}>
+          <Address
+            title="Designo Central Office"
+            lines={["3886 Wellington Street", "Toronto, Ontario M9C 3J5"]}
+          />
+          <Address
+            title="Contact Us (Central Office)"
+            lines={["P : +1 253-863-8967", "M : contact@designo.co"]}
+          />
+        </div>
+      </div>
     </footer>
   );
 }

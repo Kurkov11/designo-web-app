@@ -9,6 +9,16 @@ export default function ProjectCategoriesSection() {
         title="Web Design"
         href="/design"
       />
+      <ProjectCategory
+        backgroundImage="src/assets/home/mobile/image-app-design.jpg"
+        title="App Design"
+        href="/design"
+      />
+      <ProjectCategory
+        backgroundImage="src/assets/home/mobile/image-graphic-design.jpg"
+        title="Graphic Design"
+        href="/design"
+      />
     </section>
   );
 }

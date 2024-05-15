@@ -1,6 +1,10 @@
 .intro-text {
   padding-block: 80px;
   padding-inline: 24px;
+
+  /* Move this over phone image. Text must be sellectable and links must be clickable  */
+  position: relative;
+  z-index: 10;
 }
 .intro {
   background-image: url("src/assets/home/desktop/bg-pattern-hero-home.svg");

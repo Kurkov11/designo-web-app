@@ -21,6 +21,6 @@
   src: url("src/assets/fonts/Jost-Light.woff2") format("woff2");
   font-weight: 300;
 }
-* {
+body {
   font-family: "Jost";
 }

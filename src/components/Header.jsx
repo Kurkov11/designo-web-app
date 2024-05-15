@@ -1,6 +1,6 @@
 import classes from "./Header.module.css";
 
-export default function Header() {
+export default function Header({ onHamburgerToggle, hamburgerOpen }) {
   return (
     <header className={classes.header}>
       <img
@@ -8,10 +8,11 @@ export default function Header() {
         src="src/assets/shared/desktop/logo-dark.png"
         alt=""
       />
-      <button>
+      <button className={classes["hamburger"]} onClick={onHamburgerToggle}>
         <img
-          className={classes.hamburger}
-          src="src/assets/shared/mobile/icon-hamburger.svg"
+          src={`src/assets/shared/mobile/${
+            hamburgerOpen ? "icon-close.svg" : "icon-hamburger.svg"
+          }`}
           alt=""
         />
       </button>

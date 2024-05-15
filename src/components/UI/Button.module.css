@@ -2,9 +2,11 @@
   background-color: var(--white);
   color: var(--black);
   font-family: "Jost";
+  font-size: 15px;
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 1px;
   padding: 17px 24.5px;
   border-radius: 8px;
+  display: block;
 }

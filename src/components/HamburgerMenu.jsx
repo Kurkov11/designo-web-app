@@ -3,7 +3,7 @@ import classes from "./HamburgerMenu.module.css";
 
 export default function HamburgerMenu() {
   return (
-    <nav>
+    <nav className={classes.nav}>
       <ul className={classes["hamburger-menu"]}>
         <li>
           <Link to="/about">Our Company</Link>

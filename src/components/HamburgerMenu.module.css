@@ -4,7 +4,6 @@
   display: grid;
   gap: 32px;
   position: absolute;
-  z-index: 20;
   width: 100%;
 
   text-transform: uppercase;

@@ -7,17 +7,17 @@ export default function ProjectCategoriesSection() {
       <ProjectCategory
         backgroundImage="src/assets/home/mobile/image-web-design.jpg"
         title="Web Design"
-        href="/design"
+        href="/web-design"
       />
       <ProjectCategory
         backgroundImage="src/assets/home/mobile/image-app-design.jpg"
         title="App Design"
-        href="/design"
+        href="/app-design"
       />
       <ProjectCategory
         backgroundImage="src/assets/home/mobile/image-graphic-design.jpg"
         title="Graphic Design"
-        href="/design"
+        href="/graphic-design"
       />
     </section>
   );

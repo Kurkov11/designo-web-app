@@ -11,4 +11,5 @@
   letter-spacing: 2px;
   line-height: 25px;
   font-weight: 300;
+  z-index: 20;
 }

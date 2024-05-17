@@ -1,0 +1,25 @@
+.intro-section {
+  padding: 105px 24px;
+  background-color: var(--peach);
+  /* Fix the background to match design */
+  background-image: url("src/assets/shared/mobile/bg-pattern-design-pages-intro-mobile.svg");
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 320px;
+  box-sizing: border-box;
+}
+.intro-section h1 {
+  text-align: center;
+  color: white;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 36px;
+  margin-bottom: 24px;
+}
+.intro-section p {
+  text-align: center;
+  color: white;
+  font-size: 15px;
+  line-height: 25px;
+}

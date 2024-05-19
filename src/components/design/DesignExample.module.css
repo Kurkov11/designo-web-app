@@ -8,12 +8,7 @@
 
 .text {
   padding: 32px 30px;
-  background-color: rgb(
-    255,
-    173,
-    155,
-    0.2
-  ); /* var(--light-peach) with alpha reduced */
+  background-color: var(--very-light-peach);
   border-radius: 0 0 15px 15px;
 
   text-align: center;

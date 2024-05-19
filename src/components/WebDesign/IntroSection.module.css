@@ -3,6 +3,8 @@
   background-color: var(--peach);
   /* Fix the background to match design */
   background-image: url("src/assets/shared/mobile/bg-pattern-design-pages-intro-mobile.svg");
+  background-position: 100% 0;
+  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: center;

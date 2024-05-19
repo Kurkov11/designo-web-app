@@ -11,28 +11,16 @@ export default function ExampleDesignsSection() {
         Change{"\u2018"}
       </SiteExample>
       <SiteExample
-        img="src/assets/app-design/desktop/image-eyecam.jpg"
-        title="Eyecam"
+        img="src/assets/graphic-design/desktop/image-boxed-water.jpg"
+        title="Boxed Water"
       >
-        Product that lets you edit your favorite photos and videos at any time
+        A simple packaging concept made for Boxed Water
       </SiteExample>
       <SiteExample
-        img="src/assets/app-design/desktop/image-faceit.jpg"
-        title="Faceit"
+        img="src/assets/graphic-design/desktop/image-science.jpg"
+        title="Science!"
       >
-        Get to meet your favorite internet superstar with the faceit app
-      </SiteExample>
-      <SiteExample
-        img="src/assets/app-design/desktop/image-todo.jpg"
-        title="Todo"
-      >
-        A todo app that features cloud sync with light and dark mode
-      </SiteExample>
-      <SiteExample
-        img="src/assets/app-design/desktop/image-loopstudios.jpg"
-        title="LoopStudios"
-      >
-        A VR experience app made for Loopstudios
+        A poster made in collaboration with the Federal Art Project
       </SiteExample>
     </section>
   );

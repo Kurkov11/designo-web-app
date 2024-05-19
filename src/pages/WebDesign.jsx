@@ -1,5 +1,10 @@
 import IntroSection from "../components/WebDesign/IntroSection";
 
 export default function WebDesign() {
-  return <IntroSection />;
+  return (
+    <>
+      <IntroSection />
+      <ExampleDesignsSection />
+    </>
+  );
 }

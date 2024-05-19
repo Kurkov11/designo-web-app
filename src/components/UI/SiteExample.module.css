@@ -3,15 +3,35 @@
   background-position: 0 0;
   background-size: cover;
   background-repeat: no-repeat;
+  border-radius: 15px 15px 0 0;
 }
 
 .text {
   padding: 32px 30px;
+  background-color: rgb(
+    255,
+    173,
+    155,
+    0.2
+  ); /* var(--light-peach) with alpha reduced */
+  border-radius: 0 0 15px 15px;
+
+  text-align: center;
 }
 
 .text h4 {
   color: var(--peach);
+  text-transform: uppercase;
+  font-size: 20px;
+  line-height: 26px;
+  letter-spacing: 5px;
+  font-weight: 400;
+
+  margin-bottom: 16px;
 }
 .text p {
   color: var(--black);
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 300;
 }

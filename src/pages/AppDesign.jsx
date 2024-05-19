@@ -1,3 +1,13 @@
+import ProjectCategoriesSection from "../components/UI/ProjectCategoriesSection";
+import ExampleDesignsSection from "../components/AppDesign/ExampleDesignsSection";
+import IntroSection from "../components/AppDesign/IntroSection";
+
 export default function AppDesign() {
-  return <h1>App Design</h1>;
+  return (
+    <>
+      <IntroSection />
+      <ExampleDesignsSection />
+      <ProjectCategoriesSection />
+    </>
+  );
 }

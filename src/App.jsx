@@ -9,7 +9,7 @@ import HomePage from "./pages/HomePage.jsx";
 import WebDesignPage from "./pages/web-design/WebDesignPage.jsx";
 import AppDesignPage from "./pages/app-design/AppDesignPage.jsx";
 import GraphicDesignPage from "./pages/graphic-design/GraphicDesignPage.jsx";
-import AboutPage from "./pages/AboutPage.jsx";
+import AboutPage from "./pages/about/AboutPage.jsx";
 import LocationsPage from "./pages/LocationsPage.jsx";
 import ContactPage from "./pages/ContactPage.jsx";
 

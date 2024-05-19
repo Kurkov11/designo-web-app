@@ -1,3 +1,13 @@
+import ProjectCategoriesSection from "../components/UI/ProjectCategoriesSection";
+import ExampleDesignsSection from "../components/GraphicDesign/ExampleDesignsSection";
+import IntroSection from "../components/GraphicDesign/IntroSection";
+
 export default function GraphicDesign() {
-  return <h1>Graphic Design</h1>;
+  return (
+    <>
+      <IntroSection />
+      <ExampleDesignsSection />
+      <ProjectCategoriesSection />
+    </>
+  );
 }

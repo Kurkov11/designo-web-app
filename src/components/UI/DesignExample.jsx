@@ -1,4 +1,4 @@
-import classes from "./SiteExample.module.css";
+import classes from "./DesignExample.module.css";
 
 export default function SiteExample({ img, title, children }) {
   return (

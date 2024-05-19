@@ -1,4 +1,4 @@
-import SiteExample from "../UI/SiteExample";
+import SiteExample from "../UI/DesignExample";
 import classes from "./ExampleDesignsSection.module.css";
 export default function ExampleDesignsSection() {
   return (

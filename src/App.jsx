@@ -6,9 +6,9 @@ import {
 } from "react-router-dom";
 import MainLayout from "./layouts/MainLayout.jsx";
 import Home from "./pages/Home.jsx";
-import WebDesign from "./pages/WebDesign/WebDesign.jsx";
-import AppDesign from "./pages/AppDesign/AppDesign.jsx";
-import GraphicDesign from "./pages/GraphicDesign/GraphicDesign.jsx";
+import WebDesign from "./pages/web-design/WebDesign.jsx";
+import AppDesign from "./pages/app-design/AppDesign.jsx";
+import GraphicDesign from "./pages/graphic-design/GraphicDesign.jsx";
 import About from "./pages/About.jsx";
 import Locations from "./pages/Locations.jsx";
 import Contact from "./pages/Contact.jsx";

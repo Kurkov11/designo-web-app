@@ -1,4 +1,4 @@
-import ProjectCategoriesSection from "../../components/shared/ProjectCategories/ProjectCategoriesSection";
+import ProjectCategoriesSection from "../../components/shared/project-categories/ProjectCategoriesSection";
 import ExampleDesignsSection from "./ExampleDesignsSection";
 import DesignIntro from "../../components/shared/design/DesignIntro";
 

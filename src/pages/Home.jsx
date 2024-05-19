@@ -1,6 +1,6 @@
-import CompanyValuesSection from "../components/Home/CompanyValuesSection.jsx";
-import IntroSection from "../components/Home/IntroSection";
-import ProjectCategoriesSection from "../components/shared/ProjectCategories/ProjectCategoriesSection.jsx";
+import CompanyValuesSection from "../components/home/CompanyValuesSection.jsx";
+import IntroSection from "../components/home/IntroSection.jsx";
+import ProjectCategoriesSection from "../components/shared/project-categories/ProjectCategoriesSection.jsx";
 
 export default function Home() {
   return (

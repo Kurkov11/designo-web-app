@@ -5,25 +5,25 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import MainLayout from "./layouts/MainLayout.jsx";
-import Home from "./pages/Home.jsx";
-import WebDesign from "./pages/web-design/WebDesign.jsx";
-import AppDesign from "./pages/app-design/AppDesign.jsx";
-import GraphicDesign from "./pages/graphic-design/GraphicDesign.jsx";
-import About from "./pages/About.jsx";
-import Locations from "./pages/Locations.jsx";
-import Contact from "./pages/Contact.jsx";
+import HomePage from "./pages/HomePage.jsx";
+import WebDesignPage from "./pages/web-design/WebDesignPage.jsx";
+import AppDesignPage from "./pages/app-design/AppDesignPage.jsx";
+import GraphicDesignPage from "./pages/graphic-design/GraphicDesignPage.jsx";
+import AboutPage from "./pages/AboutPage.jsx";
+import LocationsPage from "./pages/LocationsPage.jsx";
+import ContactPage from "./pages/ContactPage.jsx";
 
 function App() {
   const router = createBrowserRouter(
     createRoutesFromElements(
       <Route path="/" element={<MainLayout />}>
-        <Route path="/" element={<Home />} />
-        <Route path="/web-design" element={<WebDesign />} />
-        <Route path="/app-design" element={<AppDesign />} />
-        <Route path="/graphic-design" element={<GraphicDesign />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/locations" element={<Locations />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/" element={<HomePage />} />
+        <Route path="/web-design" element={<WebDesignPage />} />
+        <Route path="/app-design" element={<AppDesignPage />} />
+        <Route path="/graphic-design" element={<GraphicDesignPage />} />
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/locations" element={<LocationsPage />} />
+        <Route path="/contact" element={<ContactPage />} />
       </Route>
     )
   );

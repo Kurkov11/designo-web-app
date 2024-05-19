@@ -1,6 +1,7 @@
 import HamburgerMenu from "./HamburgerMenu";
 import classes from "./Header.module.css";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function Header() {
   const [hamburgerOpen, setHamburgerOpen] = useState(false);
@@ -10,11 +11,13 @@ export default function Header() {
   return (
     <header className={classes.wrapper}>
       <div className={classes.header}>
-        <img
-          className={classes.logo}
-          src="src/assets/shared/desktop/logo-dark.png"
-          alt=""
-        />
+        <Link to="/">
+          <img
+            className={classes.logo}
+            src="src/assets/shared/desktop/logo-dark.png"
+            alt=""
+          />
+        </Link>
         <button
           className={classes["hamburger"]}
           onClick={handleHamburgerToggle}

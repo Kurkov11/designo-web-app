@@ -20,7 +20,7 @@ export default function ProjectCategoriesSection() {
           href="/app-design"
         />
       )}
-      {pathname !== "graphic-design" && (
+      {pathname !== "/graphic-design" && (
         <ProjectCategory
           backgroundImage="src/assets/home/mobile/image-graphic-design.jpg"
           title="Graphic Design"

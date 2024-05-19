@@ -1,6 +1,6 @@
-import DesignIntro from "../components/UI/DesignIntro";
-import ProjectCategoriesSection from "../components/UI/ProjectCategoriesSection";
-import ExampleDesignsSection from "../components/WebDesign/ExampleDesignsSection";
+import DesignIntro from "../../components/shared/design/DesignIntro";
+import ProjectCategoriesSection from "../../components/shared/ProjectCategories/ProjectCategoriesSection";
+import ExampleDesignsSection from "./ExampleDesignsSection";
 
 export default function WebDesign() {
   return (

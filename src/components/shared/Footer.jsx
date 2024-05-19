@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import classes from "./Footer.module.css";
-import Button from "./Button";
+import Button from "./UI/Button";
 import Address from "../Home/Address";
 
 export default function Footer() {

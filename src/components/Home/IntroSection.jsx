@@ -1,4 +1,4 @@
-import Button from "../UI/Button";
+import Button from "../shared/UI/Button";
 import classes from "./IntroSection.module.css";
 import { Link } from "react-router-dom";
 

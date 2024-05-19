@@ -1,8 +1,9 @@
-import SiteExample from "../UI/DesignExample";
-import classes from "./ExampleDesignsSection.module.css";
+import SiteExample from "../../components/shared/design/DesignExample";
+import DesignExamplesSection from "../../components/shared/design/DesignExamplesSection";
+
 export default function ExampleDesignsSection() {
   return (
-    <section className={classes.section}>
+    <DesignExamplesSection>
       <SiteExample
         img="src/assets/graphic-design/desktop/image-change.jpg"
         title="Tim Brown"
@@ -22,6 +23,6 @@ export default function ExampleDesignsSection() {
       >
         A poster made in collaboration with the Federal Art Project
       </SiteExample>
-    </section>
+    </DesignExamplesSection>
   );
 }

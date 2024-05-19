@@ -4,14 +4,14 @@ import {
   Route,
   RouterProvider,
 } from "react-router-dom";
-import MainLayout from "./layouts/MainLayout";
-import Home from "./pages/Home";
-import WebDesign from "./pages/WebDesign";
-import AppDesign from "./pages/AppDesign";
-import GraphicDesign from "./pages/GraphicDesign";
-import About from "./pages/About";
-import Locations from "./pages/Locations";
-import Contact from "./pages/Contact";
+import MainLayout from "./layouts/MainLayout.jsx";
+import Home from "./pages/Home.jsx";
+import WebDesign from "./pages/WebDesign/WebDesign.jsx";
+import AppDesign from "./pages/AppDesign/AppDesign.jsx";
+import GraphicDesign from "./pages/GraphicDesign/GraphicDesign.jsx";
+import About from "./pages/About.jsx";
+import Locations from "./pages/Locations.jsx";
+import Contact from "./pages/Contact.jsx";
 
 function App() {
   const router = createBrowserRouter(

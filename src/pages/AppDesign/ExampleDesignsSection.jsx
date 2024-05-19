@@ -1,8 +1,8 @@
-import SiteExample from "../UI/DesignExample";
-import classes from "./ExampleDesignsSection.module.css";
+import SiteExample from "../../components/shared/design/DesignExample.jsx";
+import DesignExamplesSection from "../../components/shared/design/DesignExamplesSection.jsx";
 export default function ExampleDesignsSection() {
   return (
-    <section className={classes.section}>
+    <DesignExamplesSection>
       <SiteExample
         img="src/assets/app-design/desktop/image-airfilter.jpg"
         title="Airfilter"
@@ -33,6 +33,6 @@ export default function ExampleDesignsSection() {
       >
         A VR experience app made for Loopstudios
       </SiteExample>
-    </section>
+    </DesignExamplesSection>
   );
 }

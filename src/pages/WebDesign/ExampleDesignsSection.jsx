@@ -1,8 +1,9 @@
-import DesignExample from "../UI/DesignExample";
-import classes from "./ExampleDesignsSection.module.css";
+import DesignExample from "../../components/shared/design/DesignExample";
+import DesignExamplesSection from "../../components/shared/design/DesignExamplesSection";
+
 export default function ExampleDesignsSection() {
   return (
-    <section className={classes.section}>
+    <DesignExamplesSection>
       <DesignExample img="src/assets/desktop/image-express.jpg" title="Express">
         A multi-carrier shipping website for ecommerce businesses
       </DesignExample>
@@ -25,6 +26,6 @@ export default function ExampleDesignsSection() {
       <DesignExample img="src/assets/desktop/image-camp.jpg" title="Camp">
         Get expert training in coding, data, design, and digital marketing
       </DesignExample>
-    </section>
+    </DesignExamplesSection>
   );
 }

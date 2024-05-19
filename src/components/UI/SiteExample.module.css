@@ -1,7 +1,8 @@
 .example {
   height: 320px;
   background-position: 0 0;
-  background-size: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .text {

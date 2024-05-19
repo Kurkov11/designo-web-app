@@ -1,11 +1,14 @@
+import DesignIntro from "../components/UI/DesignIntro";
 import ProjectCategoriesSection from "../components/UI/ProjectCategoriesSection";
 import ExampleDesignsSection from "../components/WebDesign/ExampleDesignsSection";
-import IntroSection from "../components/WebDesign/IntroSection";
 
 export default function WebDesign() {
   return (
     <>
-      <IntroSection />
+      <DesignIntro title="Web Design">
+        We build websites that serve as powerful marketing tools and bring
+        memorable brand experiences.
+      </DesignIntro>
       <ExampleDesignsSection />
       <ProjectCategoriesSection />
     </>

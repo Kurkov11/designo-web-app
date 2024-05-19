@@ -1,11 +1,14 @@
 import ProjectCategoriesSection from "../components/UI/ProjectCategoriesSection";
 import ExampleDesignsSection from "../components/GraphicDesign/ExampleDesignsSection";
-import IntroSection from "../components/GraphicDesign/IntroSection";
+import DesignIntro from "../components/UI/DesignIntro";
 
 export default function GraphicDesign() {
   return (
     <>
-      <IntroSection />
+      <DesignIntro title="Graphic Design">
+        We deliver eye-catching branding materials that are tailored to meet
+        your business objectives.
+      </DesignIntro>
       <ExampleDesignsSection />
       <ProjectCategoriesSection />
     </>

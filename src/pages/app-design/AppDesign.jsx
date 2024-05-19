@@ -1,6 +1,6 @@
-import ProjectCategoriesSection from "../../components/shared/project-categories/ProjectCategoriesSection";
-import ExampleDesignsSection from "./ExampleDesignsSection";
-import DesignIntro from "../../components/shared/design/DesignIntro";
+import ProjectCategoriesSection from "../../components/design/project-categories/ProjectCategoriesSection";
+import ExampleDesignsSection from "./AppExampleDesigns";
+import DesignIntro from "../../components/design/DesignIntro";
 
 export default function AppDesign() {
   return (

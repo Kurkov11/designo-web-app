@@ -1,6 +1,6 @@
 import classes from "./ProjectCategory.module.css";
 import { Link } from "react-router-dom";
-import DarkBackgroundCard from "../UI/DarkBackgroundCard";
+import DarkBackgroundCard from "../../shared/UI/DarkBackgroundCard";
 
 export default function ProjectCategory({ backgroundImage, title, href }) {
   return (

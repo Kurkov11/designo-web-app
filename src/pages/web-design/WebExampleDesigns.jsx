@@ -1,5 +1,5 @@
-import DesignExample from "../../components/shared/design/DesignExample";
-import DesignExamplesSection from "../../components/shared/design/DesignExamplesSection";
+import DesignExample from "../../components/design/DesignExample";
+import DesignExamplesSection from "../../components/design/DesignExamplesSection";
 
 export default function ExampleDesignsSection() {
   return (

@@ -1,38 +1,39 @@
-import SiteExample from "../../components/shared/design/DesignExample.jsx";
-import DesignExamplesSection from "../../components/shared/design/DesignExamplesSection.jsx";
+import DesignExample from "../../components/design/DesignExample.jsx";
+import DesignExamplesSection from "../../components/design/DesignExamplesSection.jsx";
+
 export default function ExampleDesignsSection() {
   return (
     <DesignExamplesSection>
-      <SiteExample
+      <DesignExample
         img="src/assets/app-design/desktop/image-airfilter.jpg"
         title="Airfilter"
       >
         Solving the problem of poor indoor air quality by filtering the air
-      </SiteExample>
-      <SiteExample
+      </DesignExample>
+      <DesignExample
         img="src/assets/app-design/desktop/image-eyecam.jpg"
         title="Eyecam"
       >
         Product that lets you edit your favorite photos and videos at any time
-      </SiteExample>
-      <SiteExample
+      </DesignExample>
+      <DesignExample
         img="src/assets/app-design/desktop/image-faceit.jpg"
         title="Faceit"
       >
         Get to meet your favorite internet superstar with the faceit app
-      </SiteExample>
-      <SiteExample
+      </DesignExample>
+      <DesignExample
         img="src/assets/app-design/desktop/image-todo.jpg"
         title="Todo"
       >
         A todo app that features cloud sync with light and dark mode
-      </SiteExample>
-      <SiteExample
+      </DesignExample>
+      <DesignExample
         img="src/assets/app-design/desktop/image-loopstudios.jpg"
         title="LoopStudios"
       >
         A VR experience app made for Loopstudios
-      </SiteExample>
+      </DesignExample>
     </DesignExamplesSection>
   );
 }

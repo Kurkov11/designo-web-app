@@ -1,8 +1,9 @@
 import LocationLink from "./LocationLink";
+import classes from "./LocationLinksSection.module.css";
 
 export default function LocationLinksSection() {
   return (
-    <section>
+    <section className={classes.section}>
       <LocationLink
         img="src/assets/shared/desktop/illustration-canada.svg"
         circleRotation="90deg"

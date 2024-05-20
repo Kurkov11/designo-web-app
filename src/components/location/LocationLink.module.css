@@ -1,7 +1,14 @@
+.mainContainer {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .imgContainer {
   width: 202px;
   height: 202px;
   position: relative; /* Keep absolutely positioned element within container */
+  margin-bottom: 48px;
 }
 .circle {
   background-image: url("src/assets/shared/desktop/bg-pattern-small-circle.svg");
@@ -13,4 +20,14 @@
 .img {
   position: absolute;
   top: 0;
+  left: 0;
+}
+.title {
+  color: var(--black);
+  font-size: 20px;
+  line-height: 26px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+
+  margin-bottom: 32px;
 }

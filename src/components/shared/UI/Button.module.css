@@ -1,6 +1,4 @@
 .button {
-  background-color: var(--white);
-  color: var(--black);
   font-family: "Jost";
   font-size: 15px;
   font-weight: 500;
@@ -10,6 +8,14 @@
   border-radius: 8px;
   width: fit-content;
   display: block;
+}
+.light {
+  background-color: var(--peach);
+  color: white;
+}
+.dark {
+  background-color: var(--white);
+  color: var(--black);
 }
 .button:hover {
   background-color: var(--light-peach);

@@ -2,7 +2,7 @@ import classes from "./RealDealSection.module.css";
 
 export default function RealDealSection() {
   return (
-    <section>
+    <section className={classes.section}>
       <div className={classes.img} />
       <div className={classes.text}>
         <h2>The real deal</h2>

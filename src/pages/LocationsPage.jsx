@@ -2,6 +2,7 @@ import LocationSection from "../components/location/LocationSection";
 import classes from "./LocationsPage.module.css";
 
 export default function LocationsPage() {
+  console.log(classes["bottom-section"]);
   return (
     <>
       <LocationSection title="Canada">
@@ -9,9 +10,51 @@ export default function LocationsPage() {
           <p>
             <strong>Designo Central Office</strong>
             <br />
-            Designo Central Office 3886 Wellington Street
+            3886 Wellington Street
             <br />
             Toronto, Ontario M9C 3J5
+          </p>
+          <p>&nbsp;</p>
+          <p>
+            <strong>Contact</strong>
+            <br />
+            P : +1 253-863-8967
+            <br />M : contact@designo.co
+          </p>
+        </address>
+      </LocationSection>
+      <LocationSection title="Australia">
+        <address className={classes.address}>
+          <p>
+            <strong>Designo AU Office</strong> <br />
+            19 Balonne Street <br />
+            New South Wales 2443
+          </p>
+          <p>&nbsp;</p>
+          <p>
+            <strong>Contact</strong>
+            <br />
+            P : (02) 6720 9092
+            <br />M : contact@designo.au
+          </p>
+        </address>
+      </LocationSection>
+      <LocationSection
+        title="United Kingdom"
+        className={classes["bottom-section"]}
+      >
+        <address className={classes.address}>
+          <p>
+            <strong>Designo UK Office</strong> <br />
+            13 Colorado Way <br />
+            Rhyd-y-fro SA8 9GA
+          </p>
+          <p>&nbsp;</p>
+          <p>
+            <strong>Contact</strong>
+            <br />
+            P : 078 3115 1400
+            <br />M : contact@designo.uk
           </p>
         </address>
       </LocationSection>

@@ -49,31 +49,31 @@ export default function Footer() {
         <div className={classes["social-icons"]}>
           <a href="#facebook">
             <img
-              src="src/assets/shared/desktop/icon-facebook.svg"
+              src="/src/assets/shared/desktop/icon-facebook.svg"
               alt="facebook icon"
             />
           </a>
           <a href="#youtube">
             <img
-              src="src/assets/shared/desktop/icon-youtube.svg"
+              src="/src/assets/shared/desktop/icon-youtube.svg"
               alt="youtube icon"
             />
           </a>
           <a href="#twitter">
             <img
-              src="src/assets/shared/desktop/icon-twitter.svg"
+              src="/src/assets/shared/desktop/icon-twitter.svg"
               alt="twitter icon"
             />
           </a>
           <a href="#pinterest">
             <img
-              src="src/assets/shared/desktop/icon-pinterest.svg"
+              src="/src/assets/shared/desktop/icon-pinterest.svg"
               alt="pinterest icon"
             />
           </a>
           <a href="#instagram">
             <img
-              src="src/assets/shared/desktop/icon-instagram.svg"
+              src="/src/assets/shared/desktop/icon-instagram.svg"
               alt="instagram icon"
             />
           </a>

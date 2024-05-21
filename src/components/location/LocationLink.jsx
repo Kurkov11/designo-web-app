@@ -1,7 +1,7 @@
 import Button from "../shared/UI/Button";
 import classes from "./LocationLink.module.css";
-
-export default function LocationLink({ img, title, circleRotation }) {
+import { Link } from "react-router-dom";
+export default function LocationLink({ img, title, circleRotation, to }) {
   return (
     <div className={classes.mainContainer}>
       <div className={classes.imgContainer}>
@@ -12,7 +12,9 @@ export default function LocationLink({ img, title, circleRotation }) {
         <img src={img} alt="" className={classes.img} />
       </div>
       <h3 className={classes.title}>{title}</h3>
-      <Button theme="light">See Location</Button>
+      <Link to={to}>
+        <Button theme="light">See Location</Button>
+      </Link>
     </div>
   );
 }

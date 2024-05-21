@@ -1,11 +1,19 @@
+import { useParams } from "react-router-dom";
 import LocationSection from "../components/location/LocationSection";
+import useScroll from "../components/useScroll";
 import classes from "./LocationsPage.module.css";
+import { useEffect } from "react";
 
 export default function LocationsPage() {
-  console.log(classes["bottom-section"]);
+  const params = useParams();
+  console.log(params.location);
+
+  useEffect(() => {
+    document.getElementById(params.location).scrollIntoView();
+  }, []);
   return (
     <>
-      <LocationSection title="Canada">
+      <LocationSection title="Canada" id="canada">
         <address className={classes.address}>
           <p>
             <strong>Designo Central Office</strong>
@@ -23,7 +31,7 @@ export default function LocationsPage() {
           </p>
         </address>
       </LocationSection>
-      <LocationSection title="Australia">
+      <LocationSection title="Australia" id="australia">
         <address className={classes.address}>
           <p>
             <strong>Designo AU Office</strong> <br />
@@ -42,6 +50,7 @@ export default function LocationsPage() {
       <LocationSection
         title="United Kingdom"
         className={classes["bottom-section"]}
+        id="united-kingdom"
       >
         <address className={classes.address}>
           <p>

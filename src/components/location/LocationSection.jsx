@@ -1,9 +1,14 @@
 import classes from "./LocationSection.module.css";
 
-export default function LocationSection({ title, children, className = "" }) {
+export default function LocationSection({
+  title,
+  children,
+  className = "",
+  ...params
+}) {
   let fullClass = `${classes.section} ${className}`;
   return (
-    <section className={fullClass}>
+    <section className={fullClass} {...params}>
       <div className={classes.img} />
       <div className={classes.text}>
         <h2>{title}</h2>

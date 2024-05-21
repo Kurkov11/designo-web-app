@@ -5,19 +5,19 @@ export default function LocationLinksSection() {
   return (
     <section className={classes.section}>
       <LocationLink
-        img="src/assets/shared/desktop/illustration-canada.svg"
+        img="/src/assets/shared/desktop/illustration-canada.svg"
         circleRotation="90deg"
         title="Canada"
         to="/locations/canada"
       />
       <LocationLink
-        img="src/assets/shared/desktop/illustration-australia.svg"
+        img="/src/assets/shared/desktop/illustration-australia.svg"
         circleRotation="0deg"
         title="Australia"
         to="/locations/australia"
       />
       <LocationLink
-        img="src/assets/shared/desktop/illustration-united-kingdom.svg"
+        img="/src/assets/shared/desktop/illustration-united-kingdom.svg"
         circleRotation="-90deg"
         title="United Kingdom"
         to="/locations/united-kingdom"

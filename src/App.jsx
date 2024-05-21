@@ -22,7 +22,9 @@ function App() {
         <Route path="/app-design" element={<AppDesignPage />} />
         <Route path="/graphic-design" element={<GraphicDesignPage />} />
         <Route path="/about" element={<AboutPage />} />
-        <Route path="/locations" element={<LocationsPage />} />
+        <Route path="/locations" element={<LocationsPage />}>
+          <Route path=":location" element={<LocationsPage />} />
+        </Route>
         <Route path="/contact" element={<ContactPage />} />
       </Route>
     )

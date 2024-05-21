@@ -14,7 +14,7 @@ export default function Header() {
         <Link to="/">
           <img
             className={classes.logo}
-            src="src/assets/shared/desktop/logo-dark.png"
+            src="/src/assets/shared/desktop/logo-dark.png"
             alt=""
           />
         </Link>
@@ -23,7 +23,7 @@ export default function Header() {
           onClick={handleHamburgerToggle}
         >
           <img
-            src={`src/assets/shared/mobile/${
+            src={`/src/assets/shared/mobile/${
               hamburgerOpen ? "icon-close.svg" : "icon-hamburger.svg"
             }`}
             alt=""

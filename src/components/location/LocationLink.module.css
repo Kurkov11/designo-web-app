@@ -11,7 +11,7 @@
   margin-bottom: 48px;
 }
 .circle {
-  background-image: url("src/assets/shared/desktop/bg-pattern-small-circle.svg");
+  background-image: url("/src/assets/shared/desktop/bg-pattern-small-circle.svg");
   background-size: contain;
   background-repeat: no-repeat;
   width: 202px;

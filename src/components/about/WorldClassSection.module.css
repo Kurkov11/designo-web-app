@@ -1,13 +1,13 @@
 .img {
   height: 320px;
   background-position: center;
-  background-image: url("src/assets/about/mobile/image-world-class-talent.jpg");
+  background-image: url("/src/assets/about/mobile/image-world-class-talent.jpg");
   background-size: cover;
 }
 .text {
   background-color: var(--very-light-peach);
   padding: 80px 24px;
-  background-image: url("src/assets/shared/desktop/bg-pattern-three-circles.svg");
+  background-image: url("/src/assets/shared/desktop/bg-pattern-three-circles.svg");
   background-repeat: no-repeat;
   background-position: calc(50% + 95px) 0;
   background-size: 150%;

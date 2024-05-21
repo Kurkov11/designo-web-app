@@ -1,6 +1,5 @@
 import { useParams } from "react-router-dom";
 import LocationSection from "../components/location/LocationSection";
-import useScroll from "../components/useScroll";
 import classes from "./LocationsPage.module.css";
 import { useEffect } from "react";
 
@@ -13,7 +12,11 @@ export default function LocationsPage() {
   }, []);
   return (
     <>
-      <LocationSection title="Canada" id="canada">
+      <LocationSection
+        title="Canada"
+        id="canada"
+        coordinates={[43.6440941, -79.3953249]}
+      >
         <address className={classes.address}>
           <p>
             <strong>Designo Central Office</strong>
@@ -31,7 +34,11 @@ export default function LocationsPage() {
           </p>
         </address>
       </LocationSection>
-      <LocationSection title="Australia" id="australia">
+      <LocationSection
+        title="Australia"
+        id="australia"
+        coordinates={[-30.3293938, 149.785665]}
+      >
         <address className={classes.address}>
           <p>
             <strong>Designo AU Office</strong> <br />
@@ -51,6 +58,7 @@ export default function LocationsPage() {
         title="United Kingdom"
         className={classes["bottom-section"]}
         id="united-kingdom"
+        coordinates={[51.7320575, -3.8721996]}
       >
         <address className={classes.address}>
           <p>

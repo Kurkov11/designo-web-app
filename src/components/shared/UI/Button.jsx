@@ -7,11 +7,11 @@ export default function Button({
   ...props
 }) {
   return (
-    <div
+    <button
       className={`${classes.button} + ${classes[theme]} + ${className}`}
       {...props}
     >
       {children}
-    </div>
+    </button>
   );
 }

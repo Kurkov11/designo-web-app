@@ -7,9 +7,7 @@ export default function LocationsPage() {
   const params = useParams();
   console.log(params.location);
 
-  useEffect(() => {
-    document.getElementById(params.location).scrollIntoView();
-  }, []);
+  // ids are used because of the automatical scroll applied when the id is withing the url
   return (
     <>
       <LocationSection

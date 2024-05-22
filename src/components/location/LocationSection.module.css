@@ -2,6 +2,10 @@
   height: 320px;
   background-position: center;
   background-image: url("/src/assets/about/mobile/image-world-class-talent.jpg");
+  position: relative;
+
+  /* display the map behind the hamburger nav */
+  z-index: 0;
 }
 .text {
   background-color: var(--very-light-peach);

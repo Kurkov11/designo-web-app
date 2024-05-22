@@ -1,3 +1,4 @@
+import DarkeningOverlay from "./DarkeningOverlay";
 import HamburgerMenu from "./HamburgerMenu";
 import classes from "./Header.module.css";
 import { useState } from "react";
@@ -7,6 +8,9 @@ export default function Header() {
   const [hamburgerOpen, setHamburgerOpen] = useState(false);
   function handleHamburgerToggle() {
     setHamburgerOpen((wasOpen) => !wasOpen);
+  }
+  function handleHamburgerClose() {
+    setHamburgerOpen(false);
   }
   return (
     <header className={classes.wrapper}>
@@ -30,7 +34,8 @@ export default function Header() {
           />
         </button>
       </div>
-      {hamburgerOpen && <HamburgerMenu />}
+      {hamburgerOpen && <HamburgerMenu onClose={handleHamburgerClose} />}
+      {hamburgerOpen && <DarkeningOverlay />}
     </header>
   );
 }

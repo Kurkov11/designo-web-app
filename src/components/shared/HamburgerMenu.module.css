@@ -12,4 +12,5 @@
   line-height: 25px;
   font-weight: 300;
   z-index: 20;
+  box-sizing: border-box;
 }

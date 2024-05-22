@@ -8,21 +8,21 @@ export default function ProjectCategoriesSection() {
     <section className={classes.section}>
       {pathname !== "/web-design" && (
         <ProjectCategory
-          backgroundImage="src/assets/home/mobile/image-web-design.jpg"
+          className={classes["web-design"]}
           title="Web Design"
           href="/web-design"
         />
       )}
       {pathname !== "/app-design" && (
         <ProjectCategory
-          backgroundImage="src/assets/home/mobile/image-app-design.jpg"
+          className={classes["app-design"]}
           title="App Design"
           href="/app-design"
         />
       )}
       {pathname !== "/graphic-design" && (
         <ProjectCategory
-          backgroundImage="src/assets/home/mobile/image-graphic-design.jpg"
+          className={classes["graphic-design"]}
           title="Graphic Design"
           href="/graphic-design"
         />

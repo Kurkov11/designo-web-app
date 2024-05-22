@@ -1,3 +1,2 @@
-Make all the cards - About Us, World class talent, the real deal, location cards to a new component that has a light and dark theme passed as a prop
-
-comnmit msg - make a reusable Section component 
+768px - tablet breakpoint
+make tablet queries for components in the tablet branch

@@ -1,12 +1,10 @@
 import classes from "./DarkBackgroundCard.module.css";
 
-export default function DarkBackgroundCard({ children, backgroundImage }) {
+export default function DarkBackgroundCard({ children, className }) {
+  const finalClassName = `${classes.card} ${className}`;
   return (
     <>
-      <div
-        style={{ backgroundImage: `url(${backgroundImage})` }}
-        className={classes.card}
-      >
+      <div className={finalClassName}>
         <div className={classes.overlay}>{children}</div>
       </div>
     </>

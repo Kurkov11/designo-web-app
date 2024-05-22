@@ -3,3 +3,13 @@
   gap: 24px;
   padding: 120px 24px;
 }
+
+.web-design {
+  background-image: url("src/assets/home/mobile/image-web-design.jpg");
+}
+.app-design {
+  background-image: url("src/assets/home/mobile/image-app-design.jpg");
+}
+.graphic-design {
+  background-image: url("src/assets/home/mobile/image-graphic-design.jpg");
+}

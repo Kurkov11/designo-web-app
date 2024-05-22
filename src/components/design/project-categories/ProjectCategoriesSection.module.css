@@ -5,11 +5,23 @@
 }
 
 .web-design {
-  background-image: url("src/assets/home/mobile/image-web-design.jpg");
+  background-image: url("/src/assets/home/mobile/image-web-design.jpg");
 }
 .app-design {
-  background-image: url("src/assets/home/mobile/image-app-design.jpg");
+  background-image: url("/src/assets/home/mobile/image-app-design.jpg");
 }
 .graphic-design {
-  background-image: url("src/assets/home/mobile/image-graphic-design.jpg");
+  background-image: url("/src/assets/home/mobile/image-graphic-design.jpg");
+}
+
+@media only screen and (width >= 768px) {
+  .web-design {
+    background-image: url("/src/assets/home/tablet/image-web-design.jpg");
+  }
+  .app-design {
+    background-image: url("/src/assets/home/tablet/image-app-design.jpg");
+  }
+  .graphic-design {
+    background-image: url("/src/assets/home/tablet/image-graphic-design.jpg");
+  }
 }

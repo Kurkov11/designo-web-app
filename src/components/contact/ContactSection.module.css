@@ -1,0 +1,24 @@
+.section {
+  padding: 72px 24px;
+  text-align: center;
+  color: var(--white);
+  background-color: var(--peach);
+  background-image: url("/src/assets/contact/mobile/bg-pattern-hero-contact-mobile.svg"),
+    url("src/assets/shared/desktop/bg-pattern-small-circle.svg");
+  background-position: calc(50% + 160px) 0,
+    calc(100% + 117px) calc(100% + 226px);
+  background-size: auto, 292px;
+  background-repeat: no-repeat;
+}
+.section h1 {
+  font-size: 32px;
+  line-height: 36px;
+  font-weight: 500;
+  margin-bottom: 24px;
+}
+.section p {
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 25px;
+  margin-bottom: 48px;
+}

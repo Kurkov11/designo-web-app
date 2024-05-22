@@ -1,0 +1,31 @@
+.input {
+  --padding-down: 12px;
+
+  width: 100%;
+  font-size: 15px;
+  font-weight: 400;
+  color: white;
+  border: 0;
+  outline: 0;
+  padding-left: 24px;
+  padding-bottom: 12px;
+  background-color: transparent;
+  box-sizing: border-box;
+
+  border-bottom: 1px solid var(--white);
+  padding-bottom: calc(var(--padding-down) + 1px);
+  font-family: "Jost";
+}
+.input::placeholder {
+  color: hsla(0, 100%, 100%, 0.5);
+  font-size: 15px;
+  line-height: 26px;
+}
+.input:focus {
+  border-bottom: 2px solid var(--white);
+  padding-bottom: var(--padding-down);
+}
+.textarea {
+  height: 102px;
+  box-sizing: border-box;
+}

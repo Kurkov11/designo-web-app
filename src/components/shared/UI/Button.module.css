@@ -4,10 +4,14 @@
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 1px;
-  padding: 20px;
+  height: 56px;
+  padding-top: 1px;
+  padding-inline: 24px;
   border-radius: 8px;
   width: fit-content;
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   min-width: 152px;
   box-sizing: border-box;
 }

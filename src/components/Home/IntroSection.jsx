@@ -17,7 +17,7 @@ export default function IntroSection() {
         </Link>
       </div>
       <img
-        src="src/assets/home/desktop/image-hero-phone.png"
+        src="/src/assets/home/desktop/image-hero-phone.png"
         className={classes.phone}
         alt=""
       />

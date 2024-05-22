@@ -7,10 +7,19 @@ import { Link } from "react-router-dom";
 export default function Header() {
   const [hamburgerOpen, setHamburgerOpen] = useState(false);
   function handleHamburgerToggle() {
-    setHamburgerOpen((wasOpen) => !wasOpen);
+    setHamburgerOpen((wasOpen) => {
+      // Disable or Enable Scroll
+      document.querySelector("body").style.overflow = wasOpen
+        ? "visible"
+        : "hidden";
+
+      return !wasOpen;
+    });
   }
   function handleHamburgerClose() {
     setHamburgerOpen(false);
+    // Enable scroll
+    document.querySelector("body").style.overflow = "visible";
   }
   return (
     <header className={classes.wrapper}>

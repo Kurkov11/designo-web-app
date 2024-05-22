@@ -7,9 +7,9 @@
   z-index: 10;
 }
 .intro {
-  background-image: url("src/assets/home/desktop/bg-pattern-hero-home.svg");
+  background-image: url("/src/assets/home/desktop/bg-pattern-hero-home.svg");
   background-repeat: no-repeat;
-  background-position: 0 102px;
+  background-position: calc(50% + 130px);
   background-color: var(--peach);
   height: 843px; /* Fixed height to determine where phone is cropped */
   overflow: hidden;
@@ -35,6 +35,10 @@
   height: 913px;
   margin-block: -170px; /* allow content to go onto the phone image */
   max-width: 100%;
+
+  /* center */
+  display: block;
+  margin-inline: auto;
 }
 .link {
   display: block;

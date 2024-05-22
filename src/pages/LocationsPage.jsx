@@ -1,12 +1,7 @@
-import { useParams } from "react-router-dom";
 import LocationSection from "../components/location/LocationSection";
 import classes from "./LocationsPage.module.css";
-import { useEffect } from "react";
 
 export default function LocationsPage() {
-  const params = useParams();
-  console.log(params.location);
-
   // ids are used because of the automatical scroll applied when the id is withing the url
   return (
     <>

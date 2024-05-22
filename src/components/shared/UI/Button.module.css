@@ -8,6 +8,7 @@
   border-radius: 8px;
   width: fit-content;
   display: block;
+  min-width: 152px;
 }
 .light {
   background-color: var(--peach);

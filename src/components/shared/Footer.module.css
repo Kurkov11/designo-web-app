@@ -3,7 +3,6 @@
   margin: 0 24px;
   background-color: var(--peach);
   background-image: url("/src/assets/shared/desktop/bg-pattern-call-to-action.svg");
-  background-size: 295%;
   background-position: 44% 52%;
   background-repeat: no-repeat;
   border-radius: 15px;
@@ -83,4 +82,20 @@
   display: block;
   width: fit-content;
   margin-inline: auto;
+}
+
+@media only screen and (width >= 768px) {
+  .card {
+    margin: 0 40px;
+    padding: 57px 118px;
+  }
+  .card h2 {
+    font-size: 40px;
+    line-height: 40px;
+    padding-inline: 58px;
+  }
+  .card p {
+    font-size: 16px;
+    line-height: 26px;
+  }
 }

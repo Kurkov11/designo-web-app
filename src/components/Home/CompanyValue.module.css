@@ -23,8 +23,6 @@
 }
 
 .image {
-  background-image: url("/src/assets/shared/desktop/bg-pattern-small-circle.svg");
-  background-repeat: no-repeat;
   margin-bottom: 48px;
 }
 @media only screen and (width >= 768px) {

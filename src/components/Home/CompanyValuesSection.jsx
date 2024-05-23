@@ -15,6 +15,7 @@ export default function CompanyValuesSection() {
       <CompanyValue
         title="Resourceful"
         image="/src/assets/home/desktop/illustration-resourceful.svg"
+        circleRotation="-90deg"
       >
         Everything that we do has a strategic purpose. We use an agile approach
         in all of our projects and value customer collaboration. It guarantees
@@ -23,6 +24,7 @@ export default function CompanyValuesSection() {
       <CompanyValue
         title="Friendly"
         image="/src/assets/home/desktop/illustration-friendly.svg"
+        circleRotation="90deg"
       >
         We are a group of enthusiastic folks who know how to put people first.
         Our success depends on our customers, and we strive to give them the

@@ -15,6 +15,9 @@
 }
 
 @media only screen and (width >= 768px) {
+  .section {
+    padding-inline: 40px;
+  }
   .web-design {
     background-image: url("/src/assets/home/tablet/image-web-design.jpg");
   }

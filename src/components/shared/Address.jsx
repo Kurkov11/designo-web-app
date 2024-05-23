@@ -1,8 +1,9 @@
 import classes from "./Address.module.css";
 
-export default function Address({ title, lines }) {
+export default function Address({ title, lines, className = "" }) {
+  const fullClassName = `${classes.address} ${className}`;
   return (
-    <address className={classes.address}>
+    <address className={fullClassName}>
       <strong>{title}</strong>
       <ol>
         {lines.map((line, index) => (

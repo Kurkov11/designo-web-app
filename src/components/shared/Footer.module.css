@@ -3,7 +3,7 @@
   margin: 0 24px;
   background-color: var(--peach);
   background-image: url("/src/assets/shared/desktop/bg-pattern-call-to-action.svg");
-  background-position: 44% 52%;
+  background-position: calc(50% + 30px) 50%;
   background-repeat: no-repeat;
   border-radius: 15px;
   position: relative;
@@ -38,6 +38,12 @@
 
   background-color: var(--black);
 }
+.logo-nav-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .logo {
   width: 202px;
 }
@@ -66,7 +72,8 @@
   font-weight: 400;
 }
 .address-container {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   gap: 40px;
   margin-bottom: 40px;
 }
@@ -83,11 +90,19 @@
   width: fit-content;
   margin-inline: auto;
 }
-
+.tablet-line {
+  display: none;
+  margin-block: 32px;
+  height: 1px;
+  background-color: rgba(151, 151, 151, 0.3);
+  width: 100%;
+  border: none;
+}
 @media only screen and (width >= 768px) {
   .card {
     margin: 0 40px;
     padding: 57px 118px;
+    background-position: calc(50% + 67px) 50%;
   }
   .card h2 {
     font-size: 40px;
@@ -97,5 +112,53 @@
   .card p {
     font-size: 16px;
     line-height: 26px;
+  }
+  .main {
+    padding-top: 166px;
+    margin-top: -86px;
+    padding-inline: 39px;
+    padding-bottom: 80px;
+  }
+  .logo-nav-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .line {
+    display: none;
+  }
+  .tablet-line {
+    display: block;
+  }
+  .nav {
+    margin-bottom: 0;
+  }
+  .nav ul {
+    flex-direction: row;
+    gap: 42px;
+  }
+  .info-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .social-icons {
+    margin-bottom: 0;
+    margin-top: auto;
+    height: fit-content;
+  }
+  .address-container {
+    flex-direction: row;
+    margin-bottom: 0;
+  }
+  .contact-address ol {
+    font-weight: 500;
+  }
+
+  .address,
+  .address ol {
+    text-align: left;
+  }
+  .address strong {
+    display: block;
   }
 }

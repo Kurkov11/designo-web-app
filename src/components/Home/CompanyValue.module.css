@@ -27,3 +27,17 @@
   background-repeat: no-repeat;
   margin-bottom: 48px;
 }
+@media only screen and (width >= 768px) {
+  .value {
+    text-align: left;
+
+    flex-direction: row;
+    gap: 48px;
+  }
+  .value h4 {
+    margin-bottom: 16px;
+  }
+  .image {
+    margin-bottom: 0;
+  }
+}

@@ -4,3 +4,8 @@
   gap: 80px;
   margin-bottom: 121px;
 }
+@media only screen and (width >= 768px) {
+  .section {
+    margin-inline: 40px;
+  }
+}

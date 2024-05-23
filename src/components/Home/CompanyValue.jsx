@@ -6,8 +6,10 @@ export default function CompanyValue({ image, title, children }) {
       <div className={classes.image}>
         <img src={image} alt="" />
       </div>
-      <h4>{title}</h4>
-      <p>{children}</p>
+      <div>
+        <h4>{title}</h4>
+        <p>{children}</p>
+      </div>
     </div>
   );
 }

@@ -14,6 +14,12 @@
   height: 843px; /* Fixed height to determine where phone is cropped */
   overflow: hidden;
 }
+@media only screen and (width >= 768px) {
+  .intro {
+    margin-inline: 40px;
+    border-radius: 15px;
+  }
+}
 .intro h1 {
   text-align: center;
   color: white;

@@ -42,6 +42,19 @@ export default function Header() {
             alt=""
           />
         </button>
+        <nav className={classes["tablet-nav"]}>
+          <ul className={classes["tablet-nav__list"]}>
+            <li>
+              <Link to="/about">Our company</Link>
+            </li>
+            <li>
+              <Link to="/locations">Locations</Link>
+            </li>
+            <li>
+              <Link to="/contact">Contact</Link>
+            </li>
+          </ul>
+        </nav>
       </div>
       {hamburgerOpen && <HamburgerMenu onClose={handleHamburgerClose} />}
       {hamburgerOpen && <DarkeningOverlay />}

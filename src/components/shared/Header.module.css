@@ -11,6 +11,11 @@
   padding-inline: 24px;
   background-color: var(--white);
 }
+@media only screen and (width >= 768px) {
+  .header {
+    padding-inline: 40px;
+  }
+}
 .logo {
   width: 202px;
   height: 27px;
@@ -22,4 +27,29 @@
 }
 .hamburger:hover {
   cursor: pointer;
+}
+
+.tablet-nav {
+  display: none;
+}
+.tablet-nav__list {
+  display: flex;
+  gap: 42px;
+}
+.tablet-nav__list a {
+  color: var(--black);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+@media only screen and (width >= 768px) {
+  .hamburger {
+    display: none;
+  }
+  .tablet-nav {
+    display: block;
+  }
 }

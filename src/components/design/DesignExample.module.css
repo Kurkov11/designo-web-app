@@ -30,3 +30,21 @@
   line-height: 26px;
   font-weight: 300;
 }
+@media only screen and (width >= 768px) {
+  .container {
+    display: flex;
+  }
+  .example {
+    width: 50%;
+    border-radius: 15px 0 0 15px;
+  }
+  .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-inline: 32px;
+    width: 50%;
+    box-sizing: border-box;
+    border-radius: 0 15px 15px 0;
+  }
+}

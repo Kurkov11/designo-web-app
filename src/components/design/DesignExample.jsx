@@ -2,7 +2,7 @@ import classes from "./DesignExample.module.css";
 
 export default function SiteExample({ img, title, children }) {
   return (
-    <div>
+    <div className={classes.container}>
       <div
         className={classes.example}
         style={{ backgroundImage: `url(${img})` }}

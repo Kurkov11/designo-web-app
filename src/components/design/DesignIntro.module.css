@@ -27,7 +27,7 @@
 @media only screen and (width >= 768px) {
   .intro {
     background-image: url("/src/assets/shared/tablet/bg-pattern-design-pages-intro-tablet.svg");
-
+    background-position: calc(50% + 70px) -130px;
     margin-inline: 40px;
     padding: 64px 170px;
     border-radius: 15px;

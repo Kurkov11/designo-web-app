@@ -4,3 +4,8 @@
   gap: 40px;
   padding: 96px 24px 0 24px;
 }
+@media only screen and (width >= 768px) {
+  .section {
+    padding: 120px 40px 0 40px;
+  }
+}

@@ -25,15 +25,17 @@ export default function LocationSection({
 
   return (
     <section ref={thisSection} className={fullClass} id={id}>
-      <MapContainer center={coordinates} zoom={14} className={classes.img}>
+      <MapContainer center={coordinates} zoom={14} className={classes.map}>
         <TileLayer url="https://tile.openstreetmap.org/{z}/{x}/{y}.png" />
       </MapContainer>
       <div className={classes.text}>
-        <h2>{title}</h2>
-        {
-          // Unicode non-breaking space - create an empty paragraph that has a height
-        }
-        {children}
+        <div>
+          <h2>{title}</h2>
+          {
+            // Unicode non-breaking space - create an empty paragraph that has a height
+          }
+          {children}
+        </div>
       </div>
     </section>
   );

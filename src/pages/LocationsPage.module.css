@@ -1,3 +1,8 @@
+.address {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
 .address strong {
   font-weight: 500;
   font-size: 15px;
@@ -5,4 +10,12 @@
 }
 .bottom-section {
   margin-bottom: 120px;
+}
+
+@media only screen and (width >= 768px) {
+  .address {
+    flex-direction: row;
+    width: 446px;
+    justify-content: space-between;
+  }
 }

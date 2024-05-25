@@ -10,6 +10,9 @@ export default function LocationsPage() {
         id="canada"
         coordinates={[43.6440941, -79.3953249]}
       >
+        {
+          //Fix lack of space between two addresses in mobile mode
+        }
         <address className={classes.address}>
           <p>
             <strong>Designo Central Office</strong>
@@ -18,7 +21,6 @@ export default function LocationsPage() {
             <br />
             Toronto, Ontario M9C 3J5
           </p>
-          <p>&nbsp;</p>
           <p>
             <strong>Contact</strong>
             <br />
@@ -38,7 +40,6 @@ export default function LocationsPage() {
             19 Balonne Street <br />
             New South Wales 2443
           </p>
-          <p>&nbsp;</p>
           <p>
             <strong>Contact</strong>
             <br />
@@ -59,7 +60,6 @@ export default function LocationsPage() {
             13 Colorado Way <br />
             Rhyd-y-fro SA8 9GA
           </p>
-          <p>&nbsp;</p>
           <p>
             <strong>Contact</strong>
             <br />

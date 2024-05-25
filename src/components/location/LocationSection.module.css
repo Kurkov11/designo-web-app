@@ -1,4 +1,4 @@
-.img {
+.map {
   height: 320px;
   background-position: center;
   background-image: url("/src/assets/about/mobile/image-world-class-talent.jpg");
@@ -12,8 +12,7 @@
   padding: 80px 24px;
   background-image: url("/src/assets/shared/desktop/bg-pattern-three-circles.svg");
   background-repeat: no-repeat;
-  background-position: calc(50% + 95px) 0;
-  background-size: 150%;
+  background-position: calc(50% + 100px) 0;
 
   text-align: center;
 }
@@ -33,4 +32,35 @@
 }
 .section {
   margin-bottom: 40px;
+}
+
+@media only screen and (width >= 768px) {
+  .section {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin: 0 40px 120px 40px;
+  }
+  .map {
+    height: 326px;
+    border-radius: 15px;
+  }
+  .text {
+    text-align: left;
+    border-radius: 15px;
+    padding: 0 75px;
+    display: flex;
+    align-items: center;
+    height: 320px;
+    background-image: url("/src/assets/shared/desktop/bg-pattern-two-circles.svg");
+    background-position: 0 100%;
+  }
+  .text h2 {
+    font-size: 40px;
+    line-height: 48px;
+  }
+  .text p {
+    font-size: 16px;
+    line-height: 26px;
+  }
 }

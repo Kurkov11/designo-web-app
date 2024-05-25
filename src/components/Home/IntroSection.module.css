@@ -67,3 +67,10 @@
     margin-inline: 65px;
   }
 }
+
+@media only screen and (width >= 1441px) {
+  .intro {
+    margin-inline: 165px;
+    height: 640px;
+  }
+}

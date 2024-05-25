@@ -98,6 +98,12 @@
   width: 100%;
   border: none;
 }
+
+/* class to apply for main if there is no cta */
+.smaller-main {
+  padding-top: 64px !important;
+  margin-top: 0 !important;
+}
 @media only screen and (width >= 768px) {
   .card {
     margin: 0 40px;
@@ -160,5 +166,10 @@
   }
   .address strong {
     display: block;
+  }
+  /* class to apply for main if there is no cta */
+  .smaller-main {
+    padding-top: 80px !important;
+    margin-top: 0 !important;
   }
 }

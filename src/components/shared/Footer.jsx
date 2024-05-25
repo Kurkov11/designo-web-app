@@ -6,6 +6,11 @@ import Address from "./Address";
 export default function Footer() {
   const location = useLocation();
 
+  let classOfMain = `${classes.main}`;
+  if (location.pathname.startsWith("/contact")) {
+    classOfMain += ` ${classes["smaller-main"]}`;
+  }
+
   return (
     <footer>
       {!location.pathname.startsWith("/contact") && (
@@ -20,7 +25,7 @@ export default function Footer() {
           </Link>
         </div>
       )}
-      <div className={classes.main}>
+      <div className={classOfMain}>
         <div className={classes["logo-nav-container"]}>
           <img
             src="/src/assets/shared/desktop/logo-light.png"

@@ -1,14 +1,15 @@
 .section {
-  padding: 72px 24px;
+  padding: 71px 24px;
   text-align: center;
   color: var(--white);
   background-color: var(--peach);
+  background-repeat: no-repeat;
+
   background-image: url("/src/assets/contact/mobile/bg-pattern-hero-contact-mobile.svg"),
     url("src/assets/shared/desktop/bg-pattern-small-circle.svg");
   background-position: calc(50% + 160px) 0,
     calc(100% + 117px) calc(100% + 226px);
   background-size: auto, 292px;
-  background-repeat: no-repeat;
 }
 .section h1 {
   font-size: 32px;
@@ -21,4 +22,38 @@
   font-weight: 300;
   line-height: 25px;
   margin-bottom: 48px;
+}
+@media only screen and (width >= 768px) {
+  .section {
+    border-radius: 15px;
+    text-align: left;
+    padding: 71px 58px;
+    margin-inline: 40px;
+    background-image: none;
+    z-index: 0;
+    position: relative; /* Contain absolutely positioned rotatable-bg */
+    overflow: hidden; /* Cut the overflowing part of rotatable-bg */
+  }
+  .section h1 {
+    font-size: 48px;
+    line-height: 48px;
+  }
+  .section p {
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 40px;
+  }
+  .rotatable-bg {
+    position: absolute;
+    width: 640px;
+    height: 640px;
+    z-index: -1;
+    background-image: url("src/assets/shared/desktop/bg-pattern-small-circle.svg");
+    /* background-position: calc(50% - 200px) -83px; */
+    background-size: 640px;
+    rotate: 225deg;
+    background-repeat: no-repeat;
+    left: -122px;
+    top: -95px;
+  }
 }

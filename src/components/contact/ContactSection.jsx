@@ -1,12 +1,12 @@
 import classes from "./ContactSection.module.css";
 
-import Button from "/src/components/shared/UI/Button.jsx";
 import Input from "../shared/UI/Input";
 import ContactForm from "./ContactForm";
 
 export default function ContactSection() {
   return (
     <section className={classes.section}>
+      <div className={classes["rotatable-bg"]} />
       <h1>Contact Us</h1>
       <p>
         Ready to take it to the next level? Let{"\u2018"}s talk about your
@@ -18,7 +18,7 @@ export default function ContactSection() {
         <Input type="text" placeholder="Name" />
         <Input type="text" placeholder="Email Address" />
         <Input type="text" placeholder="Phone" />
-        <Input textarea name="" id="" placeholder="Your Message"></Input>
+        <Input textarea placeholder="Your Message"></Input>
       </ContactForm>
     </section>
   );

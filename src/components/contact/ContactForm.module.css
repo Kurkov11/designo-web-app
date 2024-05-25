@@ -3,6 +3,12 @@
   gap: 25px;
 }
 .button {
-  margin-top: 20px;
+  margin-top: 15px;
   margin-inline: auto;
+}
+@media only screen and (width >= 768px) {
+  .button {
+    margin: 0;
+    margin-left: auto;
+  }
 }

@@ -1,21 +1,25 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import classes from "./Footer.module.css";
 import Button from "./UI/Button";
 import Address from "./Address";
 
 export default function Footer() {
+  const location = useLocation();
+
   return (
     <footer>
-      <div className={classes.card}>
-        <h2>Let's talk about your project</h2>
-        <p>
-          Ready to take it to the next level? Contact us today and find out how
-          our expertise can help your business grow.
-        </p>
-        <Link to="/contact" className={classes.link}>
-          <Button>Get in touch</Button>
-        </Link>
-      </div>
+      {!location.pathname.startsWith("/contact") && (
+        <div className={classes.card}>
+          <h2>Let's talk about your project</h2>
+          <p>
+            Ready to take it to the next level? Contact us today and find out
+            how our expertise can help your business grow.
+          </p>
+          <Link to="/contact" className={classes.link}>
+            <Button>Get in touch</Button>
+          </Link>
+        </div>
+      )}
       <div className={classes.main}>
         <div className={classes["logo-nav-container"]}>
           <img

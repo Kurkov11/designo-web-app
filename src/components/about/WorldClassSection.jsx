@@ -1,7 +1,7 @@
 import classes from "./WorldClassSection.module.css";
 export default function WorldClassSection() {
   return (
-    <section>
+    <section className={classes.section}>
       <div className={classes.img} />
       <div className={classes.text}>
         <h2>World-class talent</h2>

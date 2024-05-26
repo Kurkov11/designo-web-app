@@ -28,3 +28,33 @@
     background-image: url("/src/assets/home/tablet/image-graphic-design.jpg");
   }
 }
+
+@media only screen and (width >= 1441px) {
+  .section {
+    padding: 160px 165px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .app-design {
+    background-image: url("/src/assets/home/desktop/image-app-design.jpg");
+  }
+  .graphic-design {
+    background-image: url("/src/assets/home/desktop/image-graphic-design.jpg");
+  }
+  .web-design {
+    min-height: 100%;
+    background-image: url("/src/assets/home/desktop/image-web-design-large.jpg");
+  }
+  .web-design-container {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+  }
+  .app-design-container {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
+  .graphic-design-container {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+  }
+}

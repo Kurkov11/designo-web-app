@@ -9,6 +9,7 @@ export default function ProjectCategoriesSection() {
       {pathname !== "/web-design" && (
         <ProjectCategory
           className={classes["web-design"]}
+          containerClass={classes["web-design-container"]}
           title="Web Design"
           href="/web-design"
         />
@@ -16,6 +17,7 @@ export default function ProjectCategoriesSection() {
       {pathname !== "/app-design" && (
         <ProjectCategory
           className={classes["app-design"]}
+          containerClass={classes["app-design-container"]}
           title="App Design"
           href="/app-design"
         />
@@ -23,6 +25,7 @@ export default function ProjectCategoriesSection() {
       {pathname !== "/graphic-design" && (
         <ProjectCategory
           className={classes["graphic-design"]}
+          containerClass={classes["graphic-design-container"]}
           title="Graphic Design"
           href="/graphic-design"
         />

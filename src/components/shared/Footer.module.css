@@ -37,6 +37,14 @@
 
   background-color: var(--black);
 }
+.text-link {
+  display: block;
+  padding-bottom: 1px; /* compensate for the appearing border on hover */
+}
+.text-link:hover {
+  padding-bottom: 0;
+  border-bottom: 1px solid rgb(92, 92, 92);
+}
 .logo-nav-container {
   width: 100%;
   display: flex;
@@ -82,6 +90,12 @@
   align-items: center;
   gap: 16px;
   margin-bottom: 64px;
+}
+.social-icons a {
+  color: #e7816b;
+}
+.social-icons a:hover {
+  color: var(--light-peach);
 }
 
 .link {

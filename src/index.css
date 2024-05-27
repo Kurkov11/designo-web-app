@@ -29,4 +29,5 @@
 }
 body {
   font-family: "Jost";
+  position: relative; /* correctly position absolute elements */
 }

@@ -1,0 +1,23 @@
+/* pseudo element background because it is easier to wrok from the figma file - 475px from the top of the document */
+.background::before {
+  content: "";
+  position: absolute;
+  z-index: -10;
+  background-image: url("/src/assets/shared/desktop/bg-pattern-leaf.svg");
+  top: 475px;
+  left: 0;
+  width: 1006px;
+  height: 594px;
+}
+/* pseudo element - easier to work with figma + it goes outside of the background container */
+.background::after {
+  content: "";
+  background-image: url("/src/assets/shared/desktop/bg-pattern-leaf.svg");
+  transform: scale(-1, -1);
+  width: 1006px;
+  height: 594px;
+  position: absolute;
+  right: 0;
+  bottom: 467px;
+  z-index: -10;
+}

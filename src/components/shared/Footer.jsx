@@ -15,11 +15,13 @@ export default function Footer() {
     <footer>
       {!location.pathname.startsWith("/contact") && (
         <div className={classes.card}>
-          <h2>Let's talk about your project</h2>
-          <p>
-            Ready to take it to the next level? Contact us today and find out
-            how our expertise can help your business grow.
-          </p>
+          <div className={classes.text}>
+            <h2>Let's talk about your project</h2>
+            <p>
+              Ready to take it to the next level? Contact us today and find out
+              how our expertise can help your business grow.
+            </p>
+          </div>
           <Link to="/contact" className={classes.link}>
             <Button>Get in touch</Button>
           </Link>

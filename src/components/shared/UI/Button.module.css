@@ -15,6 +15,9 @@
   min-width: 152px;
   box-sizing: border-box;
 }
+.button:hover {
+  cursor: pointer;
+}
 .light {
   background-color: var(--peach);
   color: white;

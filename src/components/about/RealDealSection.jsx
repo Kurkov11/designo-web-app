@@ -7,6 +7,7 @@ export default function RealDealSection() {
       title="The real deal"
       classWithBg={classes.img}
       className={classes.section}
+      reversedOrder
     >
       <p>
         As strategic partners in our clients{"\u2019"} businesses, we are ready

@@ -47,3 +47,32 @@
     line-height: 26px;
   }
 }
+@media only screen and (width >= 1441px) {
+  .section {
+    margin-inline: 165px;
+    display: flex;
+  }
+  .img {
+    flex: none;
+    width: 41%;
+    height: 640px;
+    border-radius: 15px 0 0 15px;
+  }
+  .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    padding: 0 96px;
+    border-radius: 0 15px 15px 0;
+  }
+  .reversedOrder {
+    flex-direction: row-reverse;
+  }
+  .reversedOrder .text {
+    border-radius: 15px 0 0 15px;
+  }
+  .reversedOrder .img {
+    border-radius: 0 15px 15px 0;
+  }
+}

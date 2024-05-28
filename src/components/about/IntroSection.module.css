@@ -68,3 +68,37 @@
     line-height: 26px;
   }
 }
+
+@media only screen and (width >= 1441px) {
+  .section {
+    margin-inline: 165px;
+    display: flex;
+    flex-direction: row-reverse;
+    height: 480px;
+
+    margin-bottom: 160px;
+  }
+  .intro {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    padding-left: 95px;
+    border-radius: 15px 0 0 15px;
+    background-image: url("/src/assets/about/desktop/bg-pattern-hero-about-desktop.svg");
+    background-position: 100% 100%;
+  }
+  .intro h1 {
+    margin-bottom: 32px;
+  }
+  .intro-bg {
+    background-image: none;
+  }
+  .intro-img {
+    width: 41%;
+    flex: none;
+    height: 100%;
+    background-image: url("/src/assets/about/desktop/image-about-hero.jpg");
+    border-radius: 0 15px 15px 0;
+  }
+}

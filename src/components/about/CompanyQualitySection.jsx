@@ -5,9 +5,12 @@ export default function CompanyQualitySection({
   classWithBg,
   title,
   children,
+  reversedOrder,
 }) {
-  const finalImgClass = `${classes.img} ${classWithBg}`;
-  const finalSectionClass = `${classes.section} ${className}`;
+  const finalImgClass = `${classes.img} ${classWithBg || ""}`;
+  const finalSectionClass = `${classes.section} ${className || ""} ${
+    reversedOrder ? classes.reversedOrder : ""
+  }`;
   return (
     <section className={finalSectionClass}>
       <div className={finalImgClass} />

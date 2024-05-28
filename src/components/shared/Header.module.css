@@ -59,3 +59,9 @@
     height: 155px;
   }
 }
+
+@media only screen and (width >= 1441px) {
+  .header {
+    padding-inline: 165px;
+  }
+}

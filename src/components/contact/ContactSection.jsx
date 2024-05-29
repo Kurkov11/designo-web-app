@@ -7,14 +7,16 @@ export default function ContactSection() {
   return (
     <section className={classes.section}>
       <div className={classes["rotatable-bg"]} />
-      <h1>Contact Us</h1>
-      <p>
-        Ready to take it to the next level? Let{"\u2018"}s talk about your
-        project or idea and find out how we can help your business grow. If you
-        are looking for unique digital experiences that{"\u2018"}s relatable to
-        your users, drop us a line.
-      </p>
-      <ContactForm>
+      <div className={classes.text}>
+        <h1>Contact Us</h1>
+        <p>
+          Ready to take it to the next level? Let{"\u2018"}s talk about your
+          project or idea and find out how we can help your business grow. If
+          you are looking for unique digital experiences that{"\u2018"}s
+          relatable to your users, drop us a line.
+        </p>
+      </div>
+      <ContactForm className={classes.form}>
         <Input type="text" placeholder="Name" />
         <Input type="text" placeholder="Email Address" />
         <Input type="text" placeholder="Phone" />

@@ -57,3 +57,24 @@
     top: -95px;
   }
 }
+
+@media only screen and (width >= 1441px) {
+  .section {
+    display: flex;
+    padding: 55px 96px;
+    margin-inline: 165px;
+    justify-content: space-between;
+  }
+  .text {
+    width: 48%;
+    padding-top: 80px; /* padding top from figma subtracted by secton's padding */
+  }
+  .form {
+    width: 41%;
+  }
+  .rotatable-bg {
+    left: 0;
+    top: auto;
+    bottom: 0;
+  }
+}

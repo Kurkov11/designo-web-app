@@ -64,3 +64,17 @@
     line-height: 26px;
   }
 }
+@media only screen and (width >= 1441px) {
+  .section {
+    margin-inline: 165px;
+    margin-bottom: 32px;
+    flex-direction: row;
+  }
+  .text {
+    flex-grow: 1;
+    height: auto;
+  }
+  .map {
+    width: 32%;
+  }
+}

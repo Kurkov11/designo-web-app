@@ -9,6 +9,7 @@ export default function LocationsPage() {
         title="Canada"
         id="canada"
         coordinates={[43.6440941, -79.3953249]}
+        className={classes.reversedSection}
       >
         {
           //Fix lack of space between two addresses in mobile mode
@@ -50,7 +51,7 @@ export default function LocationsPage() {
       </LocationSection>
       <LocationSection
         title="United Kingdom"
-        className={classes["bottom-section"]}
+        className={`${classes["bottom-section"]} ${classes.reversedSection}`}
         id="united-kingdom"
         coordinates={[51.7320575, -3.8721996]}
       >

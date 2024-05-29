@@ -10,7 +10,7 @@
     width: 1006px;
     height: 594px;
   }
-  /* pseudo element - easier to work with figma + it goes outside of the background container */
+  /* pseudo element - need to flip the image */
   .background::after {
     content: "";
     background-image: url("/src/assets/shared/desktop/bg-pattern-leaf.svg");

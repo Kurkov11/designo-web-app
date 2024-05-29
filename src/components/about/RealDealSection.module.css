@@ -19,6 +19,6 @@
   }
   .text {
     background-image: url("/src/assets/shared/desktop/bg-pattern-two-circles.svg");
-    background-position: calc(50%) 100%;
+    background-position: 50% 100%;
   }
 }

@@ -17,4 +17,8 @@
   .section {
     margin-bottom: 160px;
   }
+  .text {
+    background-image: url("/src/assets/shared/desktop/bg-pattern-two-circles.svg");
+    background-position: calc(50%) 100%;
+  }
 }

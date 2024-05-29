@@ -6,6 +6,7 @@ export default function WorldClassSection() {
       <CompanyQualitySection
         title="World-class talent"
         classWithBg={classes.img}
+        textClass={classes.text}
       >
         <p>
           We are a crew of strategists, problem-solvers, and technologists.

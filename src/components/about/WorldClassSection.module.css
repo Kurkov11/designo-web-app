@@ -10,4 +10,8 @@
   .img {
     background-image: url("/src/assets/about/desktop/image-world-class-talent.jpg");
   }
+  .text {
+    background-position: calc(-140px) 100%;
+    background-size: 584px;
+  }
 }

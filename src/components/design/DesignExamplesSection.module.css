@@ -17,4 +17,14 @@
     column-gap: 30px;
     row-gap: 32px;
   }
+  .background::before {
+    content: "";
+    background-image: url("/src/assets/shared/desktop/bg-pattern-leaf.svg");
+    background-repeat: no-repeat;
+    width: 1006px;
+    height: 594px;
+    position: absolute;
+    top: 281px;
+    z-index: -10;
+  }
 }

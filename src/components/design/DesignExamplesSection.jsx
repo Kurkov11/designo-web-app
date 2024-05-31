@@ -1,4 +1,8 @@
 import classes from "./DesignExamplesSection.module.css";
 export default function DesignExamplesSection({ children }) {
-  return <section className={classes.section}>{children}</section>;
+  return (
+    <div className={classes.background}>
+      <section className={classes.section}>{children}</section>
+    </div>
+  );
 }

@@ -1,5 +1,5 @@
 .section {
-  display: flex;
+  display: grid;
   flex-direction: column;
   gap: 40px;
   padding: 96px 24px 0 24px;
@@ -7,5 +7,14 @@
 @media only screen and (width >= 768px) {
   .section {
     padding: 120px 40px 0 40px;
+  }
+}
+
+@media only screen and (width >= 1441px) {
+  .section {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 160px 165px 0 165px;
+    column-gap: 30px;
+    row-gap: 32px;
   }
 }

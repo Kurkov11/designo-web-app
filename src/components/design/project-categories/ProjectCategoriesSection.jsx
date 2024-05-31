@@ -5,11 +5,15 @@ export default function ProjectCategoriesSection() {
   const pathname = useLocation().pathname;
 
   return (
-    <section className={classes.section}>
+    <section
+      className={`${classes.section} ${
+        pathname === "/" ? classes["two-row-grid"] : ""
+      }`}
+    >
       {pathname !== "/web-design" && (
         <ProjectCategory
           className={classes["web-design"]}
-          containerClass={classes["web-design-container"]}
+          containerClass={classes["project-category"]}
           title="Web Design"
           href="/web-design"
         />
@@ -17,7 +21,7 @@ export default function ProjectCategoriesSection() {
       {pathname !== "/app-design" && (
         <ProjectCategory
           className={classes["app-design"]}
-          containerClass={classes["app-design-container"]}
+          containerClass={classes["project-category"]}
           title="App Design"
           href="/app-design"
         />
@@ -25,7 +29,7 @@ export default function ProjectCategoriesSection() {
       {pathname !== "/graphic-design" && (
         <ProjectCategory
           className={classes["graphic-design"]}
-          containerClass={classes["graphic-design-container"]}
+          containerClass={classes["project-category"]}
           title="Graphic Design"
           href="/graphic-design"
         />

@@ -1,0 +1,6 @@
+@media only screen and (width >= 1300px) {
+  .background-pattern {
+    background-image: url("/src/assets/desktop/bg-pattern-intro-web.svg");
+    background-position: 100% 50%;
+  }
+}

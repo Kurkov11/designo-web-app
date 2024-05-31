@@ -20,7 +20,7 @@
   }
 }
 
-@media only screen and (width >= 1441px) {
+@media only screen and (width >= 1300px) {
   .reversedSection {
     flex-direction: row-reverse;
     justify-content: start;

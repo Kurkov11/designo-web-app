@@ -42,10 +42,9 @@
   }
 }
 
-@media only screen and (width >= 1441px) {
+@media only screen and (width >= 1300px) {
   .intro {
     margin-inline: 165px;
     height: 252px;
-    background-position: 100% 50%;
   }
 }

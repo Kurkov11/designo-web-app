@@ -6,7 +6,7 @@
     background-image: url("/src/assets/about/tablet/image-world-class-talent.jpg");
   }
 }
-@media only screen and (width >= 1441px) {
+@media only screen and (width >= 1300px) {
   .img {
     background-image: url("/src/assets/about/desktop/image-world-class-talent.jpg");
   }

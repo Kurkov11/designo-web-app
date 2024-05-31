@@ -10,7 +10,7 @@
   }
 }
 
-@media only screen and (width >= 1441px) {
+@media only screen and (width >= 1300px) {
   .section {
     grid-template-columns: repeat(3, 1fr);
     padding: 160px 165px 0 165px;

@@ -1,4 +1,4 @@
-@media only screen and (width >= 1441px) {
+@media only screen and (width >= 1300px) {
   /* pseudo element background because it is easier to wrok from the figma file - 475px from the top of the document */
   .background::before {
     content: "";

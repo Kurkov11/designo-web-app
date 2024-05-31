@@ -40,7 +40,7 @@
   }
 }
 
-@media only screen and (width >= 1441px) {
+@media only screen and (width >= 1300px) {
   .value {
     flex-direction: column;
     text-align: center;

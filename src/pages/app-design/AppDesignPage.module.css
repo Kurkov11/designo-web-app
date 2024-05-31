@@ -1,0 +1,6 @@
+@media only screen and (width >= 1300px) {
+  .background-pattern {
+    background-image: url("/src/assets/app-design/desktop/bg-pattern-intro-app.svg");
+    background-position: -61px 50%;
+  }
+}

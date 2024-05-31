@@ -60,7 +60,7 @@
   }
 }
 
-@media only screen and (width >= 1441px) {
+@media only screen and (width >= 1300px) {
   .header {
     padding-inline: 165px;
   }

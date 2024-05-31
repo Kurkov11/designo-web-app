@@ -69,7 +69,7 @@
   }
 }
 
-@media only screen and (width >= 1441px) {
+@media only screen and (width >= 1300px) {
   .section {
     margin-inline: 165px;
     display: flex;

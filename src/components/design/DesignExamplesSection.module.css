@@ -1,5 +1,5 @@
 .section {
-  display: flex;
+  display: grid;
   flex-direction: column;
   gap: 40px;
   padding: 96px 24px 0 24px;
@@ -7,5 +7,24 @@
 @media only screen and (width >= 768px) {
   .section {
     padding: 120px 40px 0 40px;
+  }
+}
+
+@media only screen and (width >= 1300px) {
+  .section {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 160px 165px 0 165px;
+    column-gap: 30px;
+    row-gap: 32px;
+  }
+  .background::before {
+    content: "";
+    background-image: url("/src/assets/shared/desktop/bg-pattern-leaf.svg");
+    background-repeat: no-repeat;
+    width: 1006px;
+    height: 594px;
+    position: absolute;
+    top: 281px;
+    z-index: -10;
   }
 }

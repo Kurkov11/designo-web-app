@@ -41,3 +41,10 @@
     line-height: 26px;
   }
 }
+
+@media only screen and (width >= 1300px) {
+  .intro {
+    margin-inline: 165px;
+    height: 252px;
+  }
+}

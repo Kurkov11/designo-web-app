@@ -1,8 +1,13 @@
 import classes from "./DesignExample.module.css";
 
-export default function SiteExample({ img, title, children }) {
+export default function SiteExample({
+  img,
+  title,
+  children,
+  siteHref = "example-site",
+}) {
   return (
-    <div className={classes.container}>
+    <a href={`#${siteHref}`} className={classes.container}>
       <div
         className={classes.example}
         style={{ backgroundImage: `url(${img})` }}
@@ -11,6 +16,6 @@ export default function SiteExample({ img, title, children }) {
         <h4>{title}</h4>
         <p>{children}</p>
       </div>
-    </div>
+    </a>
   );
 }

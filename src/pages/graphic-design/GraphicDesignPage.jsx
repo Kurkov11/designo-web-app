@@ -5,7 +5,7 @@ import classes from "./GraphicDesignPage.module.css";
 
 export default function GraphicDesign() {
   return (
-    <>
+    <main>
       <DesignIntro
         title="Graphic Design"
         classWithDesktopBg={classes["background-pattern"]}
@@ -15,6 +15,6 @@ export default function GraphicDesign() {
       </DesignIntro>
       <ExampleDesignsSection />
       <ProjectCategoriesSection />
-    </>
+    </main>
   );
 }

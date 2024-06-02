@@ -4,7 +4,7 @@ import classes from "./LocationsPage.module.css";
 export default function LocationsPage() {
   // ids are used because of the automatical scroll applied when the id is withing the url
   return (
-    <>
+    <main>
       <LocationSection
         title="Canada"
         id="canada"
@@ -69,6 +69,6 @@ export default function LocationsPage() {
           </p>
         </address>
       </LocationSection>
-    </>
+    </main>
   );
 }

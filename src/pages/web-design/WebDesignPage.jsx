@@ -5,7 +5,7 @@ import classes from "./WebDesignPage.module.css";
 
 export default function WebDesign() {
   return (
-    <>
+    <main>
       <DesignIntro
         title="Web Design"
         classWithDesktopBg={classes["background-pattern"]}
@@ -15,6 +15,6 @@ export default function WebDesign() {
       </DesignIntro>
       <ExampleDesignsSection />
       <ProjectCategoriesSection />
-    </>
+    </main>
   );
 }

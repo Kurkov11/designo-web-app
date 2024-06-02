@@ -5,7 +5,7 @@ import classes from "./AppDesignPage.module.css";
 
 export default function AppDesign() {
   return (
-    <>
+    <main>
       <DesignIntro
         title="App Design"
         classWithDesktopBg={classes["background-pattern"]}
@@ -15,6 +15,6 @@ export default function AppDesign() {
       </DesignIntro>
       <ExampleDesignsSection />
       <ProjectCategoriesSection />
-    </>
+    </main>
   );
 }

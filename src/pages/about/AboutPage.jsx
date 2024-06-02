@@ -6,11 +6,11 @@ import classes from "./AboutPage.module.css";
 
 export default function About() {
   return (
-    <div className={classes.background}>
+    <main className={classes.background}>
       <IntroSection />
       <WorldClassSection />
       <LocationLinksSection />
       <RealDealSection />
-    </div>
+    </main>
   );
 }

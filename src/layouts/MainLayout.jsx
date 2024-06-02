@@ -9,9 +9,11 @@ export default function MainLayout() {
   return (
     <>
       <Header />
-      <main>
-        <Outlet />
-      </main>
+      {
+        //main tag should come from each page (can't use a div to set a background for the sections semantically)
+      }
+      <Outlet />
+
       <Footer />
     </>
   );

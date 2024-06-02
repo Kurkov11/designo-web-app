@@ -4,9 +4,9 @@ import classes from "./ContactPage.module.css";
 
 export default function Contact() {
   return (
-    <div className={classes.background}>
+    <main className={classes.background}>
       <ContactSection />
       <LocationLinksSection />
-    </div>
+    </main>
   );
 }

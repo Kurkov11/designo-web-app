@@ -4,10 +4,10 @@ import ProjectCategoriesSection from "../components/design/project-categories/Pr
 import classes from "./HomePage.module.css";
 export default function Home() {
   return (
-    <div className={classes.background}>
+    <main className={classes.background}>
       <IntroSection />
       <ProjectCategoriesSection />
       <CompanyValuesSection />
-    </div>
+    </main>
   );
 }

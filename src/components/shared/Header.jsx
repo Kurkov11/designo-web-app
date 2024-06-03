@@ -2,7 +2,7 @@ import DarkeningOverlay from "./DarkeningOverlay";
 import HamburgerMenu from "./HamburgerMenu";
 import classes from "./Header.module.css";
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 export default function Header() {
   const [hamburgerOpen, setHamburgerOpen] = useState(false);
@@ -45,13 +45,34 @@ export default function Header() {
         <nav className={classes["tablet-nav"]}>
           <ul className={classes["tablet-nav__list"]}>
             <li>
-              <Link to="/about">Our company</Link>
+              <NavLink
+                to="/about"
+                className={({ isActive }) =>
+                  isActive ? classes["active-link"] : ""
+                }
+              >
+                Our company
+              </NavLink>
             </li>
             <li>
-              <Link to="/locations">Locations</Link>
+              <NavLink
+                to="/locations"
+                className={({ isActive }) =>
+                  isActive ? classes["active-link"] : ""
+                }
+              >
+                Locations
+              </NavLink>
             </li>
             <li>
-              <Link to="/contact">Contact</Link>
+              <NavLink
+                to="/contact"
+                className={({ isActive }) =>
+                  isActive ? classes["active-link"] : ""
+                }
+              >
+                Contact
+              </NavLink>
             </li>
           </ul>
         </nav>

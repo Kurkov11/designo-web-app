@@ -46,6 +46,10 @@
   border-bottom: 1px solid rgb(179, 179, 179);
   padding-bottom: 0;
 }
+.active-link {
+  border-bottom: 2px solid rgb(179, 179, 179);
+  margin-bottom: -1px;
+}
 
 @media only screen and (width >= 768px) {
   .hamburger {

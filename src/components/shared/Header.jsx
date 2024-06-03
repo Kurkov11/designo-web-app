@@ -2,12 +2,13 @@ import DarkeningOverlay from "./DarkeningOverlay";
 import HamburgerMenu from "./HamburgerMenu";
 import classes from "./Header.module.css";
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const TABLET_QUERY = 768;
 export default function Header() {
   const [hamburgerOpen, setHamburgerOpen] = useState(false);
   const [isTabletQuery, setIsTabletQuery] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
 
   function handleHamburgerToggle() {
     setHamburgerOpen((wasOpen) => {
@@ -24,6 +25,7 @@ export default function Header() {
     // Enable scroll
     document.querySelector("body").style.overflow = "visible";
   }
+
   function addResizeListener() {
     window.addEventListener("resize", () => {
       console.log(window.matchMedia(`(min-width: ${TABLET_QUERY}px)`).matches);
@@ -36,12 +38,31 @@ export default function Header() {
       }
     });
   }
+  function addScrollListener() {
+    window.addEventListener("scroll", () => {
+      setIsScrolled(window.scrollY > 150);
+    });
+  }
+  useEffect(() => {
+    addResizeListener();
+    addScrollListener();
+  }, []);
 
-  useEffect(() => addResizeListener, []);
   useEffect(() => handleHamburgerClose, [isTabletQuery === true]);
+  function handleIsScrolledChange() {
+    if (isScrolled) {
+      document.querySelector("main").style.paddingTop =
+        "calc(var(--header-margin-block) * 2 + var(--header-height))";
+    } else {
+      document.querySelector("main").style.paddingTop = 0;
+    }
+  }
+  useEffect(handleIsScrolledChange, [isScrolled]);
 
   return (
-    <header className={classes.wrapper}>
+    <header
+      className={`${classes.wrapper} ${isScrolled ? classes.scrolled : ""}`}
+    >
       <div className={classes.header}>
         <Link to="/">
           <img
@@ -64,13 +85,34 @@ export default function Header() {
         <nav className={classes["tablet-nav"]}>
           <ul className={classes["tablet-nav__list"]}>
             <li>
-              <Link to="/about">Our company</Link>
+              <NavLink
+                className={({ isActive }) =>
+                  isActive ? classes["active-link"] : ""
+                }
+                to="/about"
+              >
+                Our company
+              </NavLink>
             </li>
             <li>
-              <Link to="/locations">Locations</Link>
+              <NavLink
+                className={({ isActive }) =>
+                  isActive ? classes["active-link"] : ""
+                }
+                to="/locations"
+              >
+                Locations
+              </NavLink>
             </li>
             <li>
-              <Link to="/contact">Contact</Link>
+              <NavLink
+                className={({ isActive }) =>
+                  isActive ? classes["active-link"] : ""
+                }
+                to="/contact"
+              >
+                Contact
+              </NavLink>
             </li>
           </ul>
         </nav>

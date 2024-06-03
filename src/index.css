@@ -9,6 +9,9 @@
   --very-light-peach: #fdf3f0;
   --dark-grey: rgb(51, 49, 54);
   --light-grey: rgb(241, 243, 245);
+
+  --header-margin-block: 0px;
+  --header-height: 96px;
 }
 
 /* FONTS */
@@ -30,4 +33,10 @@
 body {
   font-family: "Jost";
   position: relative; /* correctly position absolute elements */
+}
+
+@media only screen and (width >= 768px) {
+  :root {
+    --header-margin-block: 59px;
+  }
 }

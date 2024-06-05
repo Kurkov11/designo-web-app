@@ -42,26 +42,96 @@ export default function Header() {
   useEffect(addResizeListener, []);
   useEffect(() => handleHamburgerClose, [isTabletQuery === true]);
 
+  const openContainerVariants = {
+    hidden: {
+      opacity: 0,
+    },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.02,
+      },
+    },
+  };
+  const openPathVariants = {
+    hidden: { pathLength: 0, pathOffset: 1 },
+    visible: { pathLength: 1, pathOffset: 0 },
+  };
+
+  const closedContainerVariants = {
+    hidden: {
+      opacity: 0,
+    },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.04,
+      },
+    },
+  };
+  const closedPathVariants = {
+    hidden: { pathLength: 0, pathOffset: 1 },
+    visible: { pathLength: 1, pathOffset: 0 },
+  };
+
   return (
     <motion.header className={classes.wrapper}>
       <div className={classes.header}>
         <Link to="/">
-          <img
+          <motion.img
             className={classes.logo}
             src="/src/assets/shared/desktop/logo-dark.png"
             alt=""
+            initial={{ opacity: 0, x: -10 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ ease: "easeInOut" }}
           />
         </Link>
         <button
           className={classes["hamburger"]}
           onClick={handleHamburgerToggle}
         >
-          <img
-            src={`/src/assets/shared/mobile/${
-              hamburgerOpen ? "icon-close.svg" : "icon-hamburger.svg"
-            }`}
-            alt=""
-          />
+          {!hamburgerOpen && (
+            <svg
+              width="24"
+              height="20"
+              viewBox="0 0 24 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <motion.g
+                fill="none"
+                stroke="#1D1C1E"
+                strokeWidth="4"
+                variants={openContainerVariants}
+                initial="hidden"
+                animate="visible"
+              >
+                <motion.path d="M0 2h24" variants={openPathVariants} />
+                <motion.path d="M0 10h24" variants={openPathVariants} />
+                <motion.path d="M0 18h24" variants={openPathVariants} />
+              </motion.g>
+            </svg>
+          )}
+
+          {hamburgerOpen && (
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <motion.g
+                variants={closedContainerVariants}
+                initial="hidden"
+                animate="visible"
+                stroke="#1D1C1E"
+                strokeWidth="4"
+              >
+                <motion.path variants={closedPathVariants} d="M3 3 L21 21" />
+                <motion.path variants={closedPathVariants} d="M21 3 L3 21" />
+              </motion.g>
+            </svg>
+          )}
         </button>
         <nav className={classes["tablet-nav"]}>
           <ul className={classes["tablet-nav__list"]}>

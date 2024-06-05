@@ -22,6 +22,9 @@
 .hamburger {
   width: 24px;
   height: 20px;
+
+  /* reset user agent stylesheet */
+  padding-inline: 0;
 }
 .hamburger:hover {
   cursor: pointer;

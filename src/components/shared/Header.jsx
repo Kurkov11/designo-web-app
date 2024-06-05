@@ -1,14 +1,15 @@
+import { AnimatePresence } from "framer-motion";
 import DarkeningOverlay from "./DarkeningOverlay";
 import HamburgerMenu from "./HamburgerMenu";
 import classes from "./Header.module.css";
 import { useEffect, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
+import { motion } from "framer-motion";
 
 const TABLET_QUERY = 768;
 export default function Header() {
   const [hamburgerOpen, setHamburgerOpen] = useState(false);
   const [isTabletQuery, setIsTabletQuery] = useState(false);
-  const [isScrolled, setIsScrolled] = useState(false);
 
   function handleHamburgerToggle() {
     setHamburgerOpen((wasOpen) => {
@@ -38,31 +39,11 @@ export default function Header() {
       }
     });
   }
-  function addScrollListener() {
-    window.addEventListener("scroll", () => {
-      setIsScrolled(window.scrollY > 150);
-    });
-  }
-  useEffect(() => {
-    addResizeListener();
-    addScrollListener();
-  }, []);
-
+  useEffect(addResizeListener, []);
   useEffect(() => handleHamburgerClose, [isTabletQuery === true]);
-  function handleIsScrolledChange() {
-    if (isScrolled) {
-      document.querySelector("main").style.paddingTop =
-        "calc(var(--header-margin-block) * 2 + var(--header-height))";
-    } else {
-      document.querySelector("main").style.paddingTop = 0;
-    }
-  }
-  useEffect(handleIsScrolledChange, [isScrolled]);
 
   return (
-    <header
-      className={`${classes.wrapper} ${isScrolled ? classes.scrolled : ""}`}
-    >
+    <motion.header className={classes.wrapper}>
       <div className={classes.header}>
         <Link to="/">
           <img
@@ -117,8 +98,10 @@ export default function Header() {
           </ul>
         </nav>
       </div>
-      {hamburgerOpen && <HamburgerMenu onClose={handleHamburgerClose} />}
-      {hamburgerOpen && <DarkeningOverlay />}
-    </header>
+      <AnimatePresence>
+        {hamburgerOpen && <HamburgerMenu onClose={handleHamburgerClose} />}
+      </AnimatePresence>
+      <AnimatePresence>{hamburgerOpen && <DarkeningOverlay />}</AnimatePresence>
+    </motion.header>
   );
 }

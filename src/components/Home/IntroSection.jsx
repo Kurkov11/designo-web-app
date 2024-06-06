@@ -1,11 +1,17 @@
 import Button from "../shared/UI/Button";
 import classes from "./IntroSection.module.css";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 export default function IntroSection() {
   return (
     <section className={classes.intro}>
-      <div className={classes.text}>
+      <motion.div
+        className={classes.text}
+        initial={{ y: -15, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.5 }}
+      >
         <h1>Award-winning custom designs and digital branding solutions</h1>
         <p>
           With over 10 years in the industry, we are experienced in creating
@@ -15,7 +21,7 @@ export default function IntroSection() {
         <Link to="/about" className={classes.link}>
           <Button>Learn More</Button>
         </Link>
-      </div>
+      </motion.div>
     </section>
   );
 }

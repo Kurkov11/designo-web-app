@@ -6,7 +6,7 @@
   flex-direction: column;
   justify-content: center;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
   background-position: center;
   position: relative;
 }
@@ -20,6 +20,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  /* include padding applied by framer motion to height */
+  box-sizing: border-box;
 }
 @media only screen and (width >= 1300px) {
   .card {

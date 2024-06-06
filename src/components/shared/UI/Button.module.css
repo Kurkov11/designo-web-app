@@ -15,9 +15,7 @@
   min-width: 152px;
   box-sizing: border-box;
 }
-.button:hover {
-  cursor: pointer;
-}
+
 .light {
   background-color: var(--peach);
   color: white;
@@ -25,8 +23,4 @@
 .dark {
   background-color: var(--white);
   color: var(--black);
-}
-.button:hover {
-  background-color: var(--light-peach);
-  color: var(--white);
 }

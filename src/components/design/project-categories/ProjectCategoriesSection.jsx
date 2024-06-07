@@ -1,69 +1,65 @@
 import classes from "./ProjectCategoriesSection.module.css";
 import ProjectCategory from "./ProjectCategory";
 import { useLocation } from "react-router-dom";
-import { useInView, motion, useAnimation } from "framer-motion";
+import { useInView, motion, useAnimate } from "framer-motion";
 import { useEffect, useRef } from "react";
 
+const MOTION_PROJECT_CATEGORIES = [
+  {
+    className: classes["web-design"],
+    title: "Web Design",
+    href: "/web-desgin",
+  },
+  {
+    className: classes["app-design"],
+    title: "App Design",
+    href: "/app-desgin",
+  },
+  {
+    className: classes["graphic-design"],
+    title: "Graphic Design",
+    href: "/graphic-desgin",
+  },
+];
 export default function ProjectCategoriesSection() {
   const pathname = useLocation().pathname;
+  const [scope, animate] = useAnimate();
 
-  const containerRef = useRef();
-  const isContainerInView = useInView(containerRef, {
-    margin: "-200px",
-  });
+  const MotionProjectCategory = motion(ProjectCategory);
 
-  const controls = useAnimation();
-  const variants = {
+  const isContainerInView = useInView(scope, { margin: "-200px", once: true });
+  const containerVariants = {
     hidden: { opacity: 0 },
     visible: { opacity: 1 },
   };
-
-  const itemVariants = {
-    hidden: { y: -10 },
-    visible: { y: 0 },
-  };
   useEffect(() => {
-    console.log(isContainerInView);
     if (isContainerInView) {
-      controls.start("visible");
+      animate(scope.current, { opacity: 1 });
     }
   }, [isContainerInView]);
-
-  const MotionProjectCategory = motion(ProjectCategory);
   return (
     <motion.section
       className={`${classes.section} ${
         pathname === "/" ? classes["two-row-grid"] : ""
       }`}
-      variants={variants}
-      ref={containerRef}
-      initial="hidden"
-      animate={controls}
+      initial={{ opacity: 0 }}
+      ref={scope}
+      variants={containerVariants}
     >
-      {pathname !== "/web-design" && (
-        <MotionProjectCategory
-          className={classes["web-design"]}
-          containerClass={classes["project-category"]}
-          title="Web Design"
-          href="/web-design"
-        />
-      )}
-      {pathname !== "/app-design" && (
-        <MotionProjectCategory
-          className={classes["app-design"]}
-          containerClass={classes["project-category"]}
-          title="App Design"
-          href="/app-design"
-        />
-      )}
-      {pathname !== "/graphic-design" && (
-        <MotionProjectCategory
-          className={classes["graphic-design"]}
-          containerClass={classes["project-category"]}
-          title="Graphic Design"
-          href="/graphic-design"
-        />
-      )}
+      {MOTION_PROJECT_CATEGORIES.map((cat, i) => {
+        if (pathname !== cat.href) {
+          return (
+            <MotionProjectCategory
+              href={cat.href}
+              title={cat.title}
+              className={cat.className}
+              initial={{ y: -30 }}
+              animate={{ y: 0 }}
+              transition={{ delay: i * 0.04, duration: 0.5 }}
+            />
+          );
+        }
+      })}
     </motion.section>
   );
 }

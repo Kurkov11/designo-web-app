@@ -1,15 +1,14 @@
 import classes from "./ProjectCategory.module.css";
 import { Link } from "react-router-dom";
 import DarkBackgroundCard from "../../shared/UI/DarkBackgroundCard";
+import { forwardRef } from "react";
 
-export default function ProjectCategory({
-  className,
-  containerClass,
-  title,
-  href,
-}) {
+const ProjectCategory = forwardRef(function ProjectCategory(
+  { className, containerClass, title, href },
+  ref
+) {
   return (
-    <Link to={href} className={containerClass}>
+    <Link to={href} className={containerClass} ref={ref}>
       <DarkBackgroundCard className={className}>
         <div className={classes.text}>
           <h2>{title}</h2>
@@ -26,4 +25,5 @@ export default function ProjectCategory({
       </DarkBackgroundCard>
     </Link>
   );
-}
+});
+export default ProjectCategory;

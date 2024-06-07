@@ -1,13 +1,12 @@
+import { forwardRef } from "react";
 import classes from "./DesignExample.module.css";
 
-export default function SiteExample({
-  img,
-  title,
-  children,
-  siteHref = "example-site",
-}) {
+const SiteExample = forwardRef(function SiteExample(
+  { img, title, children, siteHref = "example-site" },
+  ref
+) {
   return (
-    <a href={`#${siteHref}`} className={classes.container}>
+    <a href={`#${siteHref}`} ref={ref} className={classes.container}>
       <div
         className={classes.example}
         style={{ backgroundImage: `url(${img})` }}
@@ -18,4 +17,5 @@ export default function SiteExample({
       </div>
     </a>
   );
-}
+});
+export default SiteExample;

@@ -8,19 +8,19 @@ const MOTION_PROJECT_CATEGORIES = [
   {
     className: classes["web-design"],
     title: "Web Design",
-    href: "/web-desgin",
+    href: "/web-design",
     key: `motion-project-cat-web-design`,
   },
   {
     className: classes["app-design"],
     title: "App Design",
-    href: "/app-desgin",
+    href: "/app-design",
     key: `motion-project-cat-app-design`,
   },
   {
     className: classes["graphic-design"],
     title: "Graphic Design",
-    href: "/graphic-desgin",
+    href: "/graphic-design",
     key: `motion-project-cat-graphic-design`,
   },
 ];

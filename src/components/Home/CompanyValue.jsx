@@ -1,14 +1,13 @@
 import classes from "./CompanyValue.module.css";
 import ImageInCircle from "../shared/UI/ImageInCircle";
+import { forwardRef } from "react";
 
-export default function CompanyValue({
-  image,
-  title,
-  children,
-  circleRotation,
-}) {
+const CompanyValue = forwardRef(function CompanyValue(
+  { image, title, children, circleRotation },
+  ref
+) {
   return (
-    <div className={classes.value}>
+    <div className={classes.value} ref={ref}>
       <ImageInCircle
         img={image}
         className={classes.image}
@@ -20,4 +19,5 @@ export default function CompanyValue({
       </div>
     </div>
   );
-}
+});
+export default CompanyValue;

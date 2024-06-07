@@ -2,7 +2,7 @@ import classes from "./ProjectCategoriesSection.module.css";
 import ProjectCategory from "./ProjectCategory";
 import { useLocation } from "react-router-dom";
 import { useInView, motion, useAnimate } from "framer-motion";
-import { useEffect, useRef } from "react";
+import { useEffect } from "react";
 
 const MOTION_PROJECT_CATEGORIES = [
   {

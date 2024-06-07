@@ -9,16 +9,19 @@ const MOTION_PROJECT_CATEGORIES = [
     className: classes["web-design"],
     title: "Web Design",
     href: "/web-desgin",
+    key: `motion-project-cat-web-design`,
   },
   {
     className: classes["app-design"],
     title: "App Design",
     href: "/app-desgin",
+    key: `motion-project-cat-app-design`,
   },
   {
     className: classes["graphic-design"],
     title: "Graphic Design",
     href: "/graphic-desgin",
+    key: `motion-project-cat-graphic-design`,
   },
 ];
 export default function ProjectCategoriesSection() {
@@ -56,6 +59,7 @@ export default function ProjectCategoriesSection() {
               initial={{ y: -30 }}
               animate={{ y: 0 }}
               transition={{ delay: i * 0.04, duration: 0.5 }}
+              key={cat.key}
             />
           );
         }

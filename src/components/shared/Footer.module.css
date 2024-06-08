@@ -72,11 +72,16 @@
   letter-spacing: 2px;
   line-height: 14px;
 }
+.nav li {
+  display: flex;
+  justify-content: center;
+}
 .nav a {
   font-size: 14px;
   text-transform: uppercase;
   color: var(--white);
   font-weight: 400;
+  width: fit-content;
 }
 .address-container {
   display: flex;

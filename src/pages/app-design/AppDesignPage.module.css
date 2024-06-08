@@ -1,3 +1,9 @@
+.main {
+  background-image: url("/src/assets/shared/desktop/bg-pattern-leaf.svg");
+  background-repeat: no-repeat;
+  background-position: 0 100px;
+}
+
 @media only screen and (width >= 1300px) {
   .background-pattern {
     background-image: url("/src/assets/app-design/desktop/bg-pattern-intro-app.svg");

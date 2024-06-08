@@ -5,7 +5,7 @@ import classes from "./GraphicDesignPage.module.css";
 
 export default function GraphicDesign() {
   return (
-    <main>
+    <main className={classes.main}>
       <DesignIntro
         title="Graphic Design"
         classWithDesktopBg={classes["background-pattern"]}

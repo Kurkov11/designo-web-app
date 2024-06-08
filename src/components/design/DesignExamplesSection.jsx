@@ -5,7 +5,7 @@ import { useEffect } from "react";
 
 export default function DesignExamplesSection({ designExamples }) {
   const [scope, animate] = useAnimate();
-  const isSectionInView = useInView(scope);
+  const isSectionInView = useInView(scope, { once: true });
 
   useEffect(() => {
     if (isSectionInView) {

@@ -6,6 +6,10 @@
   margin-top: 15px;
   margin-inline: auto;
 }
+.success-msg {
+  text-align: center;
+  font-size: 20px; /* match the exit state of button to prevent content jumps */
+}
 @media only screen and (width >= 768px) {
   .button {
     margin: 0;

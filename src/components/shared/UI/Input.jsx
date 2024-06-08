@@ -1,7 +1,12 @@
 import classes from "./Input.module.css";
 import { AnimatePresence, motion } from "framer-motion";
 
-export default function Input({ textarea, errorMsg, ...props }) {
+export default function Input({
+  textarea,
+  errorMsg,
+  className: externalClass = "",
+  ...props
+}) {
   if (textarea) {
     return (
       <div className={classes.inputContainer}>
@@ -20,7 +25,7 @@ export default function Input({ textarea, errorMsg, ...props }) {
         <motion.textarea
           className={`${classes.input} ${classes.textarea} ${
             errorMsg ? classes["wrong-input"] : ""
-          }`}
+          } ${externalClass}`}
           type="text"
           whileFocus={{ scale: 1.01 }}
           {...props}
@@ -46,7 +51,9 @@ export default function Input({ textarea, errorMsg, ...props }) {
         type="text"
         {...props}
         whileFocus={{ scale: 1.01 }}
-        className={`${classes.input} ${errorMsg ? classes["wrong-input"] : ""}`}
+        className={`${classes.input} ${
+          errorMsg ? classes["wrong-input"] : ""
+        } ${externalClass}`}
       />
     </div>
   );

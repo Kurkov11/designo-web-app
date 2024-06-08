@@ -1,11 +1,3 @@
-.container:hover .text {
-  background-color: var(--peach);
-}
-.container:hover h4,
-.container:hover p {
-  color: var(--white);
-}
-
 .example {
   height: 320px;
   background-position: 0 0;

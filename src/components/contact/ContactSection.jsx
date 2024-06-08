@@ -2,8 +2,9 @@ import classes from "./ContactSection.module.css";
 
 import Input from "../shared/UI/Input";
 import ContactForm from "./ContactForm";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import validateEmail from "../validateEmail";
+import { motion } from "framer-motion";
 
 export default function ContactSection() {
   const [formData, setFormData] = useState({
@@ -18,7 +19,17 @@ export default function ContactSection() {
     phone: null,
     message: null,
   });
+  const [submittedCorrect, setSubmittedCorrect] = useState(false);
+  const [wasEverSubmitted, setWasEverSubmitted] = useState(false);
 
+  useEffect(() => {
+    if (
+      Object.values(inputErrors).every((err) => err === null) &&
+      wasEverSubmitted
+    ) {
+      setSubmittedCorrect(true);
+    }
+  }, [inputErrors]);
   function handleValueChange(valueName, e) {
     setFormData((prevFormData) => {
       const newFormData = { ...prevFormData, [valueName]: e.target.value };
@@ -27,6 +38,8 @@ export default function ContactSection() {
   }
   function handleSubmit(e) {
     e.preventDefault();
+    setWasEverSubmitted(true);
+
     const keyValArr = Object.entries(formData);
     keyValArr.forEach(([key, value]) => {
       setInputErrors((prevErrors) => {
@@ -58,7 +71,12 @@ export default function ContactSection() {
   return (
     <section className={classes.section}>
       <div className={classes["rotatable-bg"]} />
-      <div className={classes.text}>
+      <motion.div
+        className={classes.text}
+        initial={{ y: -15, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.5 }}
+      >
         <h1>Contact Us</h1>
         <p>
           Ready to take it to the next level? Let{"\u2018"}s talk about your
@@ -66,32 +84,44 @@ export default function ContactSection() {
           you are looking for unique digital experiences that{"\u2018"}s
           relatable to your users, drop us a line.
         </p>
-      </div>
-      <ContactForm className={classes.form} onSubmit={handleSubmit}>
+      </motion.div>
+      <ContactForm
+        className={classes.form}
+        onSubmit={handleSubmit}
+        isSubmitted={submittedCorrect}
+      >
         <Input
           type="text"
           placeholder="Name"
           onChange={(e) => handleValueChange("name", e)}
           errorMsg={inputErrors.name}
+          className={submittedCorrect ? classes["input-disabled"] : ""}
+          disabled={submittedCorrect}
         />
         <Input
           type="text"
           placeholder="Email Address"
           onChange={(e) => handleValueChange("email", e)}
           errorMsg={inputErrors.email}
+          className={submittedCorrect ? classes["input-disabled"] : ""}
+          disabled={submittedCorrect}
         />
         <Input
           type="text"
           placeholder="Phone"
           onChange={(e) => handleValueChange("phone", e)}
           errorMsg={inputErrors.phone}
+          className={submittedCorrect ? classes["input-disabled"] : ""}
+          disabled={submittedCorrect}
         />
         <Input
           textarea
           placeholder="Your Message"
           onChange={(e) => handleValueChange("message", e)}
           errorMsg={inputErrors.message}
-        ></Input>
+          className={submittedCorrect ? classes["input-disabled"] : ""}
+          disabled={submittedCorrect}
+        />
       </ContactForm>
     </section>
   );

@@ -35,6 +35,7 @@ export default function CompanyValuesSection() {
     once: true,
   });
   useEffect(() => {
+    console.log("Section in view");
     if (isSectionInView) {
       animate(scope.current, { opacity: 1 });
     }
@@ -48,13 +49,14 @@ export default function CompanyValuesSection() {
       initial={{ opacity: 0 }}
     >
       {COMPANY_VALUES.map((value, i) => {
+        console.log("rerender");
         return (
           <MotionCompanyValue
             {...value}
             key={value.key}
             initial={{ y: -30 }}
             animate={{ y: 0 }}
-            transition={{ delay: i * 0.1, duration: 0.5 }}
+            transition={{ delay: i * 0.1, duration: 0.5, once: true }}
           >
             {value.description}
           </MotionCompanyValue>

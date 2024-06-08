@@ -135,7 +135,7 @@ export default function Header() {
         </button>
         <nav className={classes["tablet-nav"]}>
           <ul className={classes["tablet-nav__list"]}>
-            <li>
+            <motion.li whileHover={{ y: -2 }}>
               <NavLink
                 className={({ isActive }) =>
                   isActive ? classes["active-link"] : ""
@@ -144,8 +144,8 @@ export default function Header() {
               >
                 Our company
               </NavLink>
-            </li>
-            <li>
+            </motion.li>
+            <motion.li whileHover={{ y: -2 }}>
               <NavLink
                 className={({ isActive }) =>
                   isActive ? classes["active-link"] : ""
@@ -154,8 +154,8 @@ export default function Header() {
               >
                 Locations
               </NavLink>
-            </li>
-            <li>
+            </motion.li>
+            <motion.li whileHover={{ y: -2 }}>
               <NavLink
                 className={({ isActive }) =>
                   isActive ? classes["active-link"] : ""
@@ -164,7 +164,7 @@ export default function Header() {
               >
                 Contact
               </NavLink>
-            </li>
+            </motion.li>
           </ul>
         </nav>
       </div>

@@ -38,21 +38,21 @@ export default function Footer() {
           <hr className={classes.line} />
           <nav className={classes.nav}>
             <ul>
-              <li>
+              <motion.li whileHover={{ y: -2 }}>
                 <Link to="/about" className={classes["text-link"]}>
                   Our Company
                 </Link>
-              </li>
-              <li>
+              </motion.li>
+              <motion.li whileHover={{ y: -2 }}>
                 <Link to="/locations" className={classes["text-link"]}>
                   Locations
                 </Link>
-              </li>
-              <li>
+              </motion.li>
+              <motion.li whileHover={{ y: -2 }}>
                 <Link to="/contact" className={classes["text-link"]}>
                   Contact
                 </Link>
-              </li>
+              </motion.li>
             </ul>
           </nav>
         </div>

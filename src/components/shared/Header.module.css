@@ -45,16 +45,13 @@
   letter-spacing: 2px;
   text-transform: uppercase;
   display: block;
-  padding-bottom: 1px; /* compensate for the border appearing on hover */
 }
 .tablet-nav__list a:hover {
   border-bottom: 1px solid rgb(179, 179, 179);
-  padding-bottom: 0;
 }
 /* Increase the border size and reduce margin bottom to avoid content jumping */
 .active-link {
-  border-bottom: 2px solid rgb(179, 179, 179);
-  margin-bottom: -1px;
+  border-bottom: 1px solid rgb(179, 179, 179);
 }
 
 @media only screen and (width >= 768px) {

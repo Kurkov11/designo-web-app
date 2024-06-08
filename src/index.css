@@ -46,9 +46,6 @@ body {
   font-family: "Jost";
   position: relative; /* correctly position absolute elements */
 }
-button:focus {
-  background-color: red;
-}
 
 @media only screen and (width >= 768px) {
   :root {

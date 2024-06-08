@@ -30,11 +30,8 @@ export default function ProjectCategoriesSection() {
 
   const MotionProjectCategory = motion(ProjectCategory);
 
-  const isContainerInView = useInView(scope, { margin: "-200px", once: true });
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: { opacity: 1 },
-  };
+  const isContainerInView = useInView(scope, { margin: "-100px", once: true });
+
   useEffect(() => {
     if (isContainerInView) {
       animate(scope.current, { opacity: 1 });
@@ -47,7 +44,6 @@ export default function ProjectCategoriesSection() {
       }`}
       initial={{ opacity: 0 }}
       ref={scope}
-      variants={containerVariants}
     >
       {MOTION_PROJECT_CATEGORIES.map((cat, i) => {
         if (pathname !== cat.href) {

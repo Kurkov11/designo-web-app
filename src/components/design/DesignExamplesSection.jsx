@@ -5,8 +5,8 @@ import { useEffect } from "react";
 
 export default function DesignExamplesSection({ designExamples }) {
   const [scope, animate] = useAnimate();
-  const isSectionInView = useInView(scope, { once: true });
 
+  const isSectionInView = useInView(scope, { once: true });
   useEffect(() => {
     if (isSectionInView) {
       animate(scope.current, { opacity: 1 });

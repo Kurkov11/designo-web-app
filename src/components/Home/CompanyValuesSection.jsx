@@ -31,7 +31,7 @@ const COMPANY_VALUES = [
 export default function CompanyValuesSection() {
   const [scope, animate] = useAnimate();
   const isSectionInView = useInView(scope, {
-    margin: "-200px",
+    margin: "-100px",
     once: true,
   });
   useEffect(() => {

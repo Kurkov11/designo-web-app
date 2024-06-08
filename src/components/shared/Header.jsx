@@ -14,7 +14,7 @@ export default function Header() {
   function handleHamburgerToggle() {
     setHamburgerOpen((wasOpen) => {
       // Disable or Enable Scroll
-      document.querySelector("body").style.overflow = wasOpen
+      document.querySelector("body").style.overflowY = wasOpen
         ? "visible"
         : "hidden";
 
@@ -24,7 +24,7 @@ export default function Header() {
   function handleHamburgerClose() {
     setHamburgerOpen(false);
     // Enable scroll
-    document.querySelector("body").style.overflow = "visible";
+    document.querySelector("body").style.overflowY = "visible";
   }
 
   function addResizeListener() {

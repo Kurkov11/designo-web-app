@@ -2,8 +2,43 @@ import classes from "./ContactSection.module.css";
 
 import Input from "../shared/UI/Input";
 import ContactForm from "./ContactForm";
+import { useState } from "react";
 
 export default function ContactSection() {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    message: "",
+  });
+  const [inputErrors, setInputErrors] = useState({
+    name: null,
+    email: null,
+    phone: null,
+    message: null,
+  });
+
+  function handleValueChange(valueName, e) {
+    setFormData((prevFormData) => {
+      const newFormData = { ...prevFormData, [valueName]: e.target.value };
+      return newFormData;
+    });
+  }
+  function handleSubmit(e) {
+    e.preventDefault();
+    const keyValArr = Object.entries(formData);
+    keyValArr.forEach(([key, value]) => {
+      setInputErrors((prevErrors) => {
+        const newErrors = { ...prevErrors };
+        if (value === "") {
+          newErrors[key] = "Input cannot be empty!";
+        } else {
+          newErrors[key] = null;
+        }
+        return newErrors;
+      });
+    });
+  }
   return (
     <section className={classes.section}>
       <div className={classes["rotatable-bg"]} />
@@ -16,11 +51,31 @@ export default function ContactSection() {
           relatable to your users, drop us a line.
         </p>
       </div>
-      <ContactForm className={classes.form}>
-        <Input type="text" placeholder="Name" />
-        <Input type="text" placeholder="Email Address" />
-        <Input type="text" placeholder="Phone" />
-        <Input textarea placeholder="Your Message"></Input>
+      <ContactForm className={classes.form} onSubmit={handleSubmit}>
+        <Input
+          type="text"
+          placeholder="Name"
+          onChange={(e) => handleValueChange("name", e)}
+          errorMsg={inputErrors.name}
+        />
+        <Input
+          type="text"
+          placeholder="Email Address"
+          onChange={(e) => handleValueChange("email", e)}
+          errorMsg={inputErrors.email}
+        />
+        <Input
+          type="text"
+          placeholder="Phone"
+          onChange={(e) => handleValueChange("phone", e)}
+          errorMsg={inputErrors.phone}
+        />
+        <Input
+          textarea
+          placeholder="Your Message"
+          onChange={(e) => handleValueChange("message", e)}
+          errorMsg={inputErrors.message}
+        ></Input>
       </ContactForm>
     </section>
   );

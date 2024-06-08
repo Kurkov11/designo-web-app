@@ -11,13 +11,13 @@
     calc(100% + 117px) calc(100% + 226px);
   background-size: auto, 292px;
 }
-.section h1 {
+.text h1 {
   font-size: 32px;
   line-height: 36px;
   font-weight: 500;
   margin-bottom: 24px;
 }
-.section p {
+.text p {
   font-size: 15px;
   font-weight: 300;
   line-height: 25px;
@@ -34,11 +34,11 @@
     position: relative; /* Contain absolutely positioned rotatable-bg */
     overflow: hidden; /* Cut the overflowing part of rotatable-bg */
   }
-  .section h1 {
+  .text h1 {
     font-size: 48px;
     line-height: 48px;
   }
-  .section p {
+  .text p {
     font-size: 16px;
     line-height: 26px;
     margin-bottom: 40px;

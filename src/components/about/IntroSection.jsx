@@ -1,4 +1,5 @@
 import classes from "./IntroSection.module.css";
+import { motion } from "framer-motion";
 
 export default function IntroSection() {
   return (
@@ -6,7 +7,11 @@ export default function IntroSection() {
       <div className={classes["intro-img"]} />
       <div className={classes.intro}>
         <div className={classes["intro-bg"]} />
-        <div>
+        <motion.div
+          initial={{ y: -15, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.5 }}
+        >
           <h1>About Us</h1>
           {
             // Unicode single quotes - prevent ide complaints
@@ -20,7 +25,7 @@ export default function IntroSection() {
             clients
             {"\u2018"} audiences.
           </p>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

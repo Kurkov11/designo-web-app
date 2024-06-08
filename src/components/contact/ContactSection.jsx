@@ -3,6 +3,7 @@ import classes from "./ContactSection.module.css";
 import Input from "../shared/UI/Input";
 import ContactForm from "./ContactForm";
 import { useState } from "react";
+import validateEmail from "../validateEmail";
 
 export default function ContactSection() {
   const [formData, setFormData] = useState({
@@ -30,11 +31,26 @@ export default function ContactSection() {
     keyValArr.forEach(([key, value]) => {
       setInputErrors((prevErrors) => {
         const newErrors = { ...prevErrors };
-        if (value === "") {
-          newErrors[key] = "Input cannot be empty!";
-        } else {
-          newErrors[key] = null;
+
+        if (key === "email") {
+          const isEmail = validateEmail(value);
+          if (value === "") {
+            newErrors[key] = "Input cannot be empty!";
+          } else if (!isEmail) {
+            newErrors[key] = "Not a valid email!";
+          } else {
+            newErrors[key] = null;
+          }
         }
+
+        if (key !== "email") {
+          if (value === "") {
+            newErrors[key] = "Input cannot be empty!";
+          } else {
+            newErrors[key] = null;
+          }
+        }
+
         return newErrors;
       });
     });

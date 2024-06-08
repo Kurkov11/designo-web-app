@@ -81,8 +81,8 @@ export default function ContactSection() {
         <p>
           Ready to take it to the next level? Let{"\u2018"}s talk about your
           project or idea and find out how we can help your business grow. If
-          you are looking for unique digital experiences that{"\u2018"}s
-          relatable to your users, drop us a line.
+          you are looking for unique digital experiences that are relatable to
+          your users, drop us a line.
         </p>
       </motion.div>
       <ContactForm

@@ -28,4 +28,5 @@
 .textarea {
   height: 102px;
   box-sizing: border-box;
+  resize: none;
 }

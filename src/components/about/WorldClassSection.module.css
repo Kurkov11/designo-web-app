@@ -1,14 +1,14 @@
 .img {
-  background-image: url("/src/assets/about/mobile/image-world-class-talent.jpg");
+  background-image: url("/src/assets/about/mobile/image-world-class-talent.webp");
 }
 @media only screen and (width >= 768px) {
   .img {
-    background-image: url("/src/assets/about/tablet/image-world-class-talent.jpg");
+    background-image: url("/src/assets/about/tablet/image-world-class-talent.webp");
   }
 }
 @media only screen and (width >= 1300px) {
   .img {
-    background-image: url("/src/assets/about/desktop/image-world-class-talent.jpg");
+    background-image: url("/src/assets/about/desktop/image-world-class-talent.webp");
   }
   .text {
     background-position: calc(-140px) 100%;

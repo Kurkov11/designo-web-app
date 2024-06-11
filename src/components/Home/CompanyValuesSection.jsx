@@ -34,7 +34,6 @@ export default function CompanyValuesSection() {
     once: true,
   });
   useEffect(() => {
-    console.log("Section in view");
     if (isSectionInView) {
       animate(scope.current, { opacity: 1 });
     }
@@ -48,7 +47,6 @@ export default function CompanyValuesSection() {
       initial={{ opacity: 0 }}
     >
       {COMPANY_VALUES.map((value, i) => {
-        console.log("rerender");
         return (
           <MotionCompanyValue
             {...value}

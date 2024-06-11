@@ -1,5 +1,5 @@
 .img {
-  background-image: url("/src/assets/about/desktop/image-real-deal.jpg");
+  background-image: url("/src/assets/about/desktop/image-real-deal.webp");
 }
 .section {
   margin-bottom: 120px;
@@ -7,18 +7,18 @@
 
 @media only screen and (width >= 768px) {
   .img {
-    background-image: url("/src/assets/about/tablet/image-real-deal.jpg");
+    background-image: url("/src/assets/about/tablet/image-real-deal.webp");
   }
 }
 @media only screen and (width >= 1300px) {
   .img {
-    background-image: url("/src/assets/about/desktop/image-real-deal.jpg");
+    background-image: url("/src/assets/about/desktop/image-real-deal.webp");
   }
   .section {
     margin-bottom: 160px;
   }
   .text {
-    background-image: url("/src/assets/shared/desktop/bg-pattern-two-circles.svg");
+    background-image: url("/src/assets/shared/desktop/bg-pattern-two-circles.webp");
     background-position: 50% 100%;
   }
 }

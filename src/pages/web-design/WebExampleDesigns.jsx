@@ -3,14 +3,14 @@ import DesignExamplesSection from "../../components/design/DesignExamplesSection
 
 const WEB_DESIGN_EXAMPLES = [
   {
-    img: "/src/assets/desktop/image-express.jpg",
+    img: "/src/assets/desktop/image-express.webp",
     title: "Express",
     siteHref: "express",
     description: "A multi-carrier shipping website for ecommerce businesses",
     key: "web-design-example-express",
   },
   {
-    img: "/src/assets/desktop/image-transfer.jpg",
+    img: "/src/assets/desktop/image-transfer.webp",
     title: "Transfer",
     siteHref: "transfer",
     description:
@@ -18,7 +18,7 @@ const WEB_DESIGN_EXAMPLES = [
     key: "web-design-example-transfer",
   },
   {
-    img: "/src/assets/desktop/image-photon.jpg",
+    img: "/src/assets/desktop/image-photon.webp",
     title: "Photon",
     siteHref: "photon",
     description:
@@ -26,7 +26,7 @@ const WEB_DESIGN_EXAMPLES = [
     key: "web-design-example-photon",
   },
   {
-    img: "/src/assets/desktop/image-builder.jpg",
+    img: "/src/assets/desktop/image-builder.webp",
     title: "Builder",
     siteHref: "builder",
     description:
@@ -34,7 +34,7 @@ const WEB_DESIGN_EXAMPLES = [
     key: "web-design-example-builder",
   },
   {
-    img: "src/assets/desktop/image-blogr.jpg",
+    img: "src/assets/desktop/image-blogr.webp",
     title: "Blogr",
     siteHref: "blogr",
     description:
@@ -42,7 +42,7 @@ const WEB_DESIGN_EXAMPLES = [
     key: "web-design-example-express-blogr",
   },
   {
-    img: "src/assets/desktop/image-camp.jpg",
+    img: "src/assets/desktop/image-camp.webp",
     title: "Camp",
     siteHref: "camp",
     description:

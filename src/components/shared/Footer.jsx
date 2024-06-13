@@ -31,7 +31,7 @@ export default function Footer() {
       <div className={classOfMain}>
         <div className={classes["logo-nav-container"]}>
           <img
-            src="/src/assets/shared/desktop/logo-light.png"
+            src="/src/assets/shared/desktop/logo-light.webp"
             alt=""
             className={classes.logo}
           />

@@ -1,7 +1,7 @@
 .map {
   height: 320px;
   background-position: center;
-  background-image: url("/src/assets/about/mobile/image-world-class-talent.jpg");
+  background-image: url("/src/assets/about/mobile/image-world-class-talent.webp");
   position: relative;
 
   /* display the map behind the hamburger nav */

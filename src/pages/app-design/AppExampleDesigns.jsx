@@ -3,7 +3,7 @@ import DesignExamplesSection from "../../components/design/DesignExamplesSection
 
 const APP_DESIGN_EXAMPLES = [
   {
-    img: "/src/assets/app-design/desktop/image-airfilter.jpg",
+    img: "/src/assets/app-design/desktop/image-airfilter.webp",
     title: "Airfilter",
     siteHref: "airfilter",
     description:
@@ -11,7 +11,7 @@ const APP_DESIGN_EXAMPLES = [
     key: "app-design-example-airfilter",
   },
   {
-    img: "/src/assets/app-design/desktop/image-eyecam.jpg",
+    img: "/src/assets/app-design/desktop/image-eyecam.webp",
     title: "Eyecam",
     siteHref: "eyecam",
     description:
@@ -19,7 +19,7 @@ const APP_DESIGN_EXAMPLES = [
     key: "app-design-example-eyecam",
   },
   {
-    img: "/src/assets/app-design/desktop/image-faceit.jpg",
+    img: "/src/assets/app-design/desktop/image-faceit.webp",
     title: "Faceit",
     siteHref: "faceit",
     description:
@@ -27,14 +27,14 @@ const APP_DESIGN_EXAMPLES = [
     key: "app-design-example-faceit",
   },
   {
-    img: "/src/assets/app-design/desktop/image-todo.jpg",
+    img: "/src/assets/app-design/desktop/image-todo.webp",
     title: "Todo",
     siteHref: "todo",
     description: "A todo app that features cloud sync with light and dark mode",
     key: "app-design-example-todo",
   },
   {
-    img: "src/assets/app-design/desktop/image-loopstudios.jpg",
+    img: "src/assets/app-design/desktop/image-loopstudios.webp",
     title: "LoopStudios",
     siteHref: "loopstudios",
     description: "A VR experience app made for Loopstudios",

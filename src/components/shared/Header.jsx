@@ -80,7 +80,7 @@ export default function Header() {
         <Link to="/">
           <motion.img
             className={classes.logo}
-            src="/src/assets/shared/desktop/logo-dark.png"
+            src="/src/assets/shared/desktop/logo-dark.webp"
             alt=""
             initial={{ opacity: 0, x: -10 }}
             animate={{ opacity: 1, x: 0 }}

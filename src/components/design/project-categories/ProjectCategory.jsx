@@ -16,7 +16,7 @@ const ProjectCategory = forwardRef(function ProjectCategory(
             View Projects{" "}
             <span className={classes.arrow}>
               <img
-                src="src/assets/home/mobile/project-category-arrow.svg"
+                src="/src/assets/images/home/mobile/project-category-arrow.svg"
                 alt=""
               />
             </span>

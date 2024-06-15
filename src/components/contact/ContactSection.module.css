@@ -5,8 +5,8 @@
   background-color: var(--peach);
   background-repeat: no-repeat;
 
-  background-image: url("/src/assets/contact/mobile/bg-pattern-hero-contact-mobile.svg"),
-    url("src/assets/shared/desktop/bg-pattern-small-circle.svg");
+  background-image: url("/src/assets/images/contact/mobile/bg-pattern-hero-contact-mobile.svg"),
+    url("src/assets/images/shared/desktop/bg-pattern-small-circle.svg");
   background-position: calc(50% + 160px) 0,
     calc(100% + 117px) calc(100% + 226px);
   background-size: auto, 292px;
@@ -51,7 +51,7 @@
     width: 640px;
     height: 640px;
     z-index: -1;
-    background-image: url("src/assets/shared/desktop/bg-pattern-small-circle.svg");
+    background-image: url("src/assets/images/shared/desktop/bg-pattern-small-circle.svg");
     /* background-position: calc(50% - 200px) -83px; */
     background-size: 640px;
     rotate: 225deg;

@@ -1,6 +1,6 @@
 .intro {
-  background-image: url("/src/assets/home/desktop/bg-pattern-hero-home.svg"),
-    url("/src/assets/home/desktop/image-hero-phone.png");
+  background-image: url("/src/assets/images/home/desktop/bg-pattern-hero-home.svg"),
+    url("/src/assets/images/home/desktop/image-hero-phone.png");
   background-position: calc(50% + 130px), calc(50%) calc(100% + 370px);
 
   background-repeat: no-repeat;

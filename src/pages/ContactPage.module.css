@@ -1,6 +1,6 @@
 @media only screen and (width >= 1300px) {
   .background {
-    background-image: url("/src/assets/shared/desktop/bg-pattern-leaf.svg");
+    background-image: url("/src/assets/images/shared/desktop/bg-pattern-leaf.svg");
     background-repeat: no-repeat;
     background-position: 100% 730px; /* distance from top is the distance from figma subtracted by the height of the header */
   }

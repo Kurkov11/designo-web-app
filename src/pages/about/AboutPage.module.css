@@ -1,7 +1,7 @@
 @media only screen and (width >= 1300px) {
   .background {
-    background-image: url("/src/assets/shared/desktop/bg-pattern-leaf.svg"),
-      url("/src/assets/shared/desktop/bg-pattern-leaf.svg");
+    background-image: url("/src/assets/images/shared/desktop/bg-pattern-leaf.svg"),
+      url("/src/assets/images/shared/desktop/bg-pattern-leaf.svg");
     background-repeat: no-repeat;
     background-position: 0 320px, calc(100% + 396px) 1622px;
   }

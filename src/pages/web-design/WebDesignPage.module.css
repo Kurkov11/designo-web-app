@@ -1,12 +1,12 @@
 .main {
-  background-image: url("/src/assets/shared/desktop/bg-pattern-leaf.svg");
+  background-image: url("/src/assets/images/shared/desktop/bg-pattern-leaf.svg");
   background-repeat: no-repeat;
   background-position: 0 100px;
 }
 
 @media only screen and (width >= 1300px) {
   .background-pattern {
-    background-image: url("/src/assets/desktop/bg-pattern-intro-web.svg");
+    background-image: url("/src/assets/images/desktop/bg-pattern-intro-web.svg");
     background-position: 100% 50%;
   }
 }

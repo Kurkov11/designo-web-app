@@ -4,7 +4,7 @@
     content: "";
     position: absolute;
     z-index: -10;
-    background-image: url("/src/assets/shared/desktop/bg-pattern-leaf.svg");
+    background-image: url("/src/assets/images/shared/desktop/bg-pattern-leaf.svg");
     top: 475px;
     left: 0;
     width: 1006px;
@@ -13,7 +13,7 @@
   /* pseudo element - need to flip the image */
   .background::after {
     content: "";
-    background-image: url("/src/assets/shared/desktop/bg-pattern-leaf.svg");
+    background-image: url("/src/assets/images/shared/desktop/bg-pattern-leaf.svg");
     transform: scale(-1, -1);
     width: 1006px;
     height: 594px;

@@ -5,13 +5,13 @@
 }
 
 .web-design {
-  background-image: url("/src/assets/home/mobile/image-web-design.webp");
+  background-image: url("/src/assets/images/home/mobile/image-web-design.webp");
 }
 .app-design {
-  background-image: url("/src/assets/home/mobile/image-app-design.webp");
+  background-image: url("/src/assets/images/home/mobile/image-app-design.webp");
 }
 .graphic-design {
-  background-image: url("/src/assets/home/mobile/image-graphic-design.webp");
+  background-image: url("/src/assets/images/home/mobile/image-graphic-design.webp");
 }
 
 @media only screen and (width >= 768px) {
@@ -19,13 +19,13 @@
     padding-inline: 40px;
   }
   .web-design {
-    background-image: url("/src/assets/home/tablet/image-web-design.webp");
+    background-image: url("/src/assets/images/home/tablet/image-web-design.webp");
   }
   .app-design {
-    background-image: url("/src/assets/home/tablet/image-app-design.webp");
+    background-image: url("/src/assets/images/home/tablet/image-app-design.webp");
   }
   .graphic-design {
-    background-image: url("/src/assets/home/tablet/image-graphic-design.webp");
+    background-image: url("/src/assets/images/home/tablet/image-graphic-design.webp");
   }
 }
 
@@ -36,15 +36,15 @@
   }
 
   .app-design {
-    background-image: url("/src/assets/home/desktop/image-app-design.webp");
+    background-image: url("/src/assets/images/home/desktop/image-app-design.webp");
     min-height: 100%;
   }
   .graphic-design {
-    background-image: url("/src/assets/home/desktop/image-graphic-design.webp");
+    background-image: url("/src/assets/images/home/desktop/image-graphic-design.webp");
     min-height: 100%;
   }
   .web-design {
-    background-image: url("/src/assets/home/desktop/image-web-design-large.webp");
+    background-image: url("/src/assets/images/home/desktop/image-web-design-large.webp");
     min-height: 100%;
   }
 

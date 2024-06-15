@@ -6,7 +6,7 @@
 .text {
   background-color: var(--very-light-peach);
   padding: 80px 24px;
-  background-image: url("/src/assets/shared/desktop/bg-pattern-three-circles.webp");
+  background-image: url("/src/images/assets/shared/desktop/bg-pattern-three-circles.webp");
   background-repeat: no-repeat;
   background-position: calc(50% + 95px) 0;
 

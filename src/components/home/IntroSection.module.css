@@ -1,0 +1,82 @@
+.intro {
+  background-image: url("/src/assets/images/home/desktop/bg-pattern-hero-home.svg"),
+    url("/src/assets/images/home/desktop/image-hero-phone.png");
+  background-position: calc(50% + 130px), calc(50%) calc(100% + 370px);
+
+  background-repeat: no-repeat;
+  background-color: var(--peach);
+  text-align: center;
+
+  padding-block: 80px;
+  padding-inline: 24px;
+  padding-bottom: 451px;
+}
+
+.intro h1 {
+  color: white;
+  font-size: 32px;
+  line-height: 36px;
+  margin-bottom: 24px;
+  font-weight: 500;
+}
+.intro p {
+  color: white;
+  font-size: 15px;
+  line-height: 25px;
+  margin-bottom: 24px;
+  font-weight: 300;
+}
+.link {
+  display: block;
+  width: fit-content;
+  margin-inline: auto;
+  position: relative;
+}
+@media only screen and (width >= 768px) {
+  .intro {
+    margin-inline: 40px;
+    border-radius: 15px;
+    padding-inline: 58px;
+    padding-top: 60px;
+    padding-bottom: 457px;
+  }
+  .intro h1 {
+    font-size: 48px;
+    line-height: 48px;
+  }
+  .intro p {
+    font-size: 16px;
+    line-height: 26px;
+    margin-inline: 65px;
+  }
+}
+
+@media only screen and (width >= 1300px) {
+  .intro {
+    box-sizing: border-box;
+    margin-inline: 165px;
+    padding: 145px 0 145px 95px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+
+    background-position: 100% 100%, calc(100% + 80px) calc(100% + 240px);
+  }
+  .text {
+    width: 540px;
+    height: 350px;
+  }
+  .intro h1 {
+    margin-bottom: 40px;
+  }
+  .intro p {
+    margin-inline: 0;
+    margin-right: 110px;
+    margin-bottom: 40px;
+  }
+  .link {
+    margin-inline: 0;
+  }
+}

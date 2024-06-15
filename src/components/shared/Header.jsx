@@ -5,6 +5,7 @@ import classes from "./Header.module.css";
 import { useEffect, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
+import darkLogo from "/src/assets/images/shared/desktop/logo-dark.webp";
 
 const TABLET_QUERY = 768;
 export default function Header() {
@@ -80,7 +81,7 @@ export default function Header() {
         <Link to="/">
           <motion.img
             className={classes.logo}
-            src="/src/assets/images/shared/desktop/logo-dark.webp"
+            src={darkLogo}
             alt=""
             initial={{ opacity: 0, x: -10 }}
             animate={{ opacity: 1, x: 0 }}

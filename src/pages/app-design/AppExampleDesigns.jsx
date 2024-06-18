@@ -1,8 +1,13 @@
 import DesignExamplesSection from "../../components/design/DesignExamplesSection.jsx";
+import airfilterImg from "/src/assets/images/app-design/desktop/image-airfilter.webp";
+import eyecamImg from "/src/assets/images/app-design/desktop/image-eyecam.webp";
+import loopstudiosImg from "/src/assets/images/app-design/desktop/image-loopstudios.webp";
+import faceitImg from "/src/assets/images/app-design/desktop/image-faceit.webp";
+import todoImg from "/src/assets/images/app-design/desktop/image-todo.webp";
 
 const APP_DESIGN_EXAMPLES = [
   {
-    img: "/src/assets/images/app-design/desktop/image-airfilter.webp",
+    img: airfilterImg,
     title: "Airfilter",
     siteHref: "airfilter",
     description:
@@ -10,7 +15,7 @@ const APP_DESIGN_EXAMPLES = [
     key: "app-design-example-airfilter",
   },
   {
-    img: "/src/assets/images/app-design/desktop/image-eyecam.webp",
+    img: eyecamImg,
     title: "Eyecam",
     siteHref: "eyecam",
     description:
@@ -18,7 +23,7 @@ const APP_DESIGN_EXAMPLES = [
     key: "app-design-example-eyecam",
   },
   {
-    img: "/src/assets/images/app-design/desktop/image-faceit.webp",
+    img: faceitImg,
     title: "Faceit",
     siteHref: "faceit",
     description:
@@ -26,14 +31,14 @@ const APP_DESIGN_EXAMPLES = [
     key: "app-design-example-faceit",
   },
   {
-    img: "/src/assets/images/app-design/desktop/image-todo.webp",
+    img: todoImg,
     title: "Todo",
     siteHref: "todo",
     description: "A todo app that features cloud sync with light and dark mode",
     key: "app-design-example-todo",
   },
   {
-    img: "/src/assets/images/app-design/desktop/image-loopstudios.webp",
+    img: loopstudiosImg,
     title: "LoopStudios",
     siteHref: "loopstudios",
     description: "A VR experience app made for Loopstudios",

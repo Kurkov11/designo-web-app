@@ -29,7 +29,7 @@ const SiteExample = forwardRef(function SiteExample(
     >
       <div
         className={classes.example}
-        style={{ backgroundImage: `url(${img})` }}
+        style={{ backgroundImage: `url("${img}")` }}
       />
       <motion.div variants={textVariants} className={classes.text}>
         <motion.h4 variants={paragraphVariants}>{title}</motion.h4>

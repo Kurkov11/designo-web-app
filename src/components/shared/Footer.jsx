@@ -3,6 +3,7 @@ import classes from "./Footer.module.css";
 import Button from "./UI/Button";
 import Address from "./Address";
 import { motion } from "framer-motion";
+import lightLogo from "/src/assets/images/shared/desktop/logo-light.webp";
 
 export default function Footer() {
   const location = useLocation();
@@ -30,11 +31,7 @@ export default function Footer() {
       )}
       <div className={classOfMain}>
         <div className={classes["logo-nav-container"]}>
-          <img
-            src="/src/assets/images/shared/desktop/logo-light.webp"
-            alt=""
-            className={classes.logo}
-          />
+          <img src={lightLogo} alt="" className={classes.logo} />
           <hr className={classes.line} />
           <nav className={classes.nav}>
             <ul>

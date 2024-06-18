@@ -18,7 +18,7 @@
     margin-bottom: 160px;
   }
   .text {
-    background-image: url("/src/assets/images/shared/desktop/bg-pattern-two-circles.webp");
+    background-image: url("/src/assets/images/shared/desktop/bg-pattern-two-circles.svg");
     background-position: 50% 100%;
   }
 }

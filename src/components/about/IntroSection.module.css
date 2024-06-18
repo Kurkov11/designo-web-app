@@ -9,7 +9,7 @@
   background-repeat: no-repeat;
   padding: 80px 24px;
   background-color: var(--peach);
-  background-image: url("/src/assets/images/about/mobile/bg-pattern-hero-about-mobile.webp");
+  background-image: url("/src/assets/images/about/mobile/bg-pattern-hero-about-mobile.svg");
   background-position: calc(50% - 250px) -140px; /* 250px left from center, 140px up */
 
   color: var(--white);
@@ -48,7 +48,7 @@
     margin-bottom: 120px;
   }
   .intro-bg {
-    background-image: url("/src/assets/images/shared/desktop/bg-pattern-small-circle.webp");
+    background-image: url("/src/assets/images/shared/desktop/bg-pattern-small-circle.svg");
     background-size: contain;
     min-width: 640px;
     min-height: 640px;
@@ -86,7 +86,7 @@
     text-align: left;
     padding-left: 95px;
     border-radius: 15px 0 0 15px;
-    background-image: url("/src/assets/images/about/desktop/bg-pattern-hero-about-desktop.webp");
+    background-image: url("/src/assets/images/about/desktop/bg-pattern-hero-about-desktop.svg");
     background-position: 100% 100%;
   }
   .intro h1 {

@@ -2,6 +2,7 @@ import classes from "./ProjectCategory.module.css";
 import { Link } from "react-router-dom";
 import DarkBackgroundCard from "../../shared/UI/DarkBackgroundCard";
 import { forwardRef } from "react";
+import orangeArrowImg from "/src/assets/images/home/mobile/project-category-arrow.webp";
 
 const ProjectCategory = forwardRef(function ProjectCategory(
   { className, containerClass, title, href },
@@ -15,10 +16,7 @@ const ProjectCategory = forwardRef(function ProjectCategory(
           <p>
             View Projects{" "}
             <span className={classes.arrow}>
-              <img
-                src="/src/assets/images/home/mobile/project-category-arrow.svg"
-                alt=""
-              />
+              <img src={orangeArrowImg} alt="" />
             </span>
           </p>
         </div>

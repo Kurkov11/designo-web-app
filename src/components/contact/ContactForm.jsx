@@ -1,4 +1,4 @@
-import { AnimatePresence, motion } from "framer-motion";
+import { AnimatePresence, motion, transform } from "framer-motion";
 import classes from "./ContactForm.module.css";
 import Button from "/src/components/shared/UI/Button.jsx";
 export default function ContactForm({
@@ -11,13 +11,15 @@ export default function ContactForm({
     <form className={`${classes.form} ${externalClass}`} action="#" {...props}>
       {children}
       {isSubmitted && (
-        <motion.p className={classes["success-msg"]}>Submitted!</motion.p>
+        <motion.p
+          className={classes["success-msg"]}
+          initial={{ height: 0 }}
+          animate={{ height: "fit-content" }}
+        >
+          Submitted!
+        </motion.p>
       )}
-      {!isSubmitted && (
-        <Button className={classes.button} exit={{ height: "20px" }}>
-          Submit
-        </Button>
-      )}
+      {!isSubmitted && <Button className={classes.button}>Submit</Button>}
     </form>
   );
 }

@@ -5,6 +5,7 @@
 .button {
   margin-top: 15px;
   margin-inline: auto;
+  overflow: hidden;
 }
 .success-msg {
   text-align: center;

@@ -1,6 +1,9 @@
 import classes from "./Input.module.css";
 import { AnimatePresence, motion } from "framer-motion";
 
+/* Images */
+import errorImg from "/src/assets/images/contact/desktop/icon-error.svg";
+
 export default function Input({
   textarea,
   errorMsg,
@@ -12,14 +15,15 @@ export default function Input({
       <div className={classes.inputContainer}>
         <AnimatePresence>
           {errorMsg && (
-            <motion.p
+            <motion.div
               initial={{ opacity: 0, height: 0 }}
               animate={{ opacity: 1, height: "auto" }}
-              exit={{ opacity: 0, height: 0, x: 10 }}
-              className={classes.error}
+              exit={{ opacity: 0, height: 0 }}
+              className={classes["error-msg"]}
             >
-              {errorMsg}
-            </motion.p>
+              <i>{errorMsg}</i>
+              <img src={errorImg} alt="" className={classes["error-img"]} />
+            </motion.div>
           )}
         </AnimatePresence>
         <motion.textarea
@@ -37,14 +41,15 @@ export default function Input({
     <div className={classes.inputContainer}>
       <AnimatePresence>
         {errorMsg && (
-          <motion.p
+          <motion.div
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
-            className={classes.error}
+            className={classes["error-msg"]}
           >
-            {errorMsg}
-          </motion.p>
+            <i>{errorMsg}</i>
+            <img src={errorImg} alt="" className={classes["error-img"]} />
+          </motion.div>
         )}
       </AnimatePresence>
       <motion.input

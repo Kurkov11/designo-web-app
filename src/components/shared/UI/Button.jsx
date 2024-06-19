@@ -20,7 +20,6 @@ export default function Button({
           type: "just",
         },
       }}
-      {...props}
     >
       {children}
     </motion.button>
